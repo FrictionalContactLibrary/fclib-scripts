@@ -1,0 +1,995 @@
+$bdyty                                                                  
+ MAILx      1
+$blmty
+ H8xxx      1  nodes      1      2      8      7     37     38     44     43 
+               model  M3DH8  behav  stone
+ H8xxx      2  nodes      2      3      9      8     38     39     45     44 
+               model  M3DH8  behav  stone
+ H8xxx      3  nodes      3      4     10      9     39     40     46     45 
+               model  M3DH8  behav  stone
+ H8xxx      4  nodes      4      5     11     10     40     41     47     46 
+               model  M3DH8  behav  stone
+ H8xxx      5  nodes      5      6     12     11     41     42     48     47 
+               model  M3DH8  behav  stone
+ H8xxx      6  nodes      7      8     14     13     43     44     50     49 
+               model  M3DH8  behav  stone
+ H8xxx      7  nodes      8      9     15     14     44     45     51     50 
+               model  M3DH8  behav  stone
+ H8xxx      8  nodes      9     10     16     15     45     46     52     51 
+               model  M3DH8  behav  stone
+ H8xxx      9  nodes     10     11     17     16     46     47     53     52 
+               model  M3DH8  behav  stone
+ H8xxx     10  nodes     11     12     18     17     47     48     54     53 
+               model  M3DH8  behav  stone
+ H8xxx     11  nodes     13     14     20     19     49     50     56     55 
+               model  M3DH8  behav  stone
+ H8xxx     12  nodes     14     15     21     20     50     51     57     56 
+               model  M3DH8  behav  stone
+ H8xxx     13  nodes     15     16     22     21     51     52     58     57 
+               model  M3DH8  behav  stone
+ H8xxx     14  nodes     16     17     23     22     52     53     59     58 
+               model  M3DH8  behav  stone
+ H8xxx     15  nodes     17     18     24     23     53     54     60     59 
+               model  M3DH8  behav  stone
+ H8xxx     16  nodes     19     20     26     25     55     56     62     61 
+               model  M3DH8  behav  stone
+ H8xxx     17  nodes     20     21     27     26     56     57     63     62 
+               model  M3DH8  behav  stone
+ H8xxx     18  nodes     21     22     28     27     57     58     64     63 
+               model  M3DH8  behav  stone
+ H8xxx     19  nodes     22     23     29     28     58     59     65     64 
+               model  M3DH8  behav  stone
+ H8xxx     20  nodes     23     24     30     29     59     60     66     65 
+               model  M3DH8  behav  stone
+ H8xxx     21  nodes     25     26     32     31     61     62     68     67 
+               model  M3DH8  behav  stone
+ H8xxx     22  nodes     26     27     33     32     62     63     69     68 
+               model  M3DH8  behav  stone
+ H8xxx     23  nodes     27     28     34     33     63     64     70     69 
+               model  M3DH8  behav  stone
+ H8xxx     24  nodes     28     29     35     34     64     65     71     70 
+               model  M3DH8  behav  stone
+ H8xxx     25  nodes     29     30     36     35     65     66     72     71 
+               model  M3DH8  behav  stone
+ H8xxx     26  nodes     37     38     44     43     73     74     80     79 
+               model  M3DH8  behav  stone
+ H8xxx     27  nodes     38     39     45     44     74     75     81     80 
+               model  M3DH8  behav  stone
+ H8xxx     28  nodes     39     40     46     45     75     76     82     81 
+               model  M3DH8  behav  stone
+ H8xxx     29  nodes     40     41     47     46     76     77     83     82 
+               model  M3DH8  behav  stone
+ H8xxx     30  nodes     41     42     48     47     77     78     84     83 
+               model  M3DH8  behav  stone
+ H8xxx     31  nodes     43     44     50     49     79     80     86     85 
+               model  M3DH8  behav  stone
+ H8xxx     32  nodes     44     45     51     50     80     81     87     86 
+               model  M3DH8  behav  stone
+ H8xxx     33  nodes     45     46     52     51     81     82     88     87 
+               model  M3DH8  behav  stone
+ H8xxx     34  nodes     46     47     53     52     82     83     89     88 
+               model  M3DH8  behav  stone
+ H8xxx     35  nodes     47     48     54     53     83     84     90     89 
+               model  M3DH8  behav  stone
+ H8xxx     36  nodes     49     50     56     55     85     86     92     91 
+               model  M3DH8  behav  stone
+ H8xxx     37  nodes     50     51     57     56     86     87     93     92 
+               model  M3DH8  behav  stone
+ H8xxx     38  nodes     51     52     58     57     87     88     94     93 
+               model  M3DH8  behav  stone
+ H8xxx     39  nodes     52     53     59     58     88     89     95     94 
+               model  M3DH8  behav  stone
+ H8xxx     40  nodes     53     54     60     59     89     90     96     95 
+               model  M3DH8  behav  stone
+ H8xxx     41  nodes     55     56     62     61     91     92     98     97 
+               model  M3DH8  behav  stone
+ H8xxx     42  nodes     56     57     63     62     92     93     99     98 
+               model  M3DH8  behav  stone
+ H8xxx     43  nodes     57     58     64     63     93     94    100     99 
+               model  M3DH8  behav  stone
+ H8xxx     44  nodes     58     59     65     64     94     95    101    100 
+               model  M3DH8  behav  stone
+ H8xxx     45  nodes     59     60     66     65     95     96    102    101 
+               model  M3DH8  behav  stone
+ H8xxx     46  nodes     61     62     68     67     97     98    104    103 
+               model  M3DH8  behav  stone
+ H8xxx     47  nodes     62     63     69     68     98     99    105    104 
+               model  M3DH8  behav  stone
+ H8xxx     48  nodes     63     64     70     69     99    100    106    105 
+               model  M3DH8  behav  stone
+ H8xxx     49  nodes     64     65     71     70    100    101    107    106 
+               model  M3DH8  behav  stone
+ H8xxx     50  nodes     65     66     72     71    101    102    108    107 
+               model  M3DH8  behav  stone
+ H8xxx     51  nodes     73     74     80     79    109    110    116    115 
+               model  M3DH8  behav  stone
+ H8xxx     52  nodes     74     75     81     80    110    111    117    116 
+               model  M3DH8  behav  stone
+ H8xxx     53  nodes     75     76     82     81    111    112    118    117 
+               model  M3DH8  behav  stone
+ H8xxx     54  nodes     76     77     83     82    112    113    119    118 
+               model  M3DH8  behav  stone
+ H8xxx     55  nodes     77     78     84     83    113    114    120    119 
+               model  M3DH8  behav  stone
+ H8xxx     56  nodes     79     80     86     85    115    116    122    121 
+               model  M3DH8  behav  stone
+ H8xxx     57  nodes     80     81     87     86    116    117    123    122 
+               model  M3DH8  behav  stone
+ H8xxx     58  nodes     81     82     88     87    117    118    124    123 
+               model  M3DH8  behav  stone
+ H8xxx     59  nodes     82     83     89     88    118    119    125    124 
+               model  M3DH8  behav  stone
+ H8xxx     60  nodes     83     84     90     89    119    120    126    125 
+               model  M3DH8  behav  stone
+ H8xxx     61  nodes     85     86     92     91    121    122    128    127 
+               model  M3DH8  behav  stone
+ H8xxx     62  nodes     86     87     93     92    122    123    129    128 
+               model  M3DH8  behav  stone
+ H8xxx     63  nodes     87     88     94     93    123    124    130    129 
+               model  M3DH8  behav  stone
+ H8xxx     64  nodes     88     89     95     94    124    125    131    130 
+               model  M3DH8  behav  stone
+ H8xxx     65  nodes     89     90     96     95    125    126    132    131 
+               model  M3DH8  behav  stone
+ H8xxx     66  nodes     91     92     98     97    127    128    134    133 
+               model  M3DH8  behav  stone
+ H8xxx     67  nodes     92     93     99     98    128    129    135    134 
+               model  M3DH8  behav  stone
+ H8xxx     68  nodes     93     94    100     99    129    130    136    135 
+               model  M3DH8  behav  stone
+ H8xxx     69  nodes     94     95    101    100    130    131    137    136 
+               model  M3DH8  behav  stone
+ H8xxx     70  nodes     95     96    102    101    131    132    138    137 
+               model  M3DH8  behav  stone
+ H8xxx     71  nodes     97     98    104    103    133    134    140    139 
+               model  M3DH8  behav  stone
+ H8xxx     72  nodes     98     99    105    104    134    135    141    140 
+               model  M3DH8  behav  stone
+ H8xxx     73  nodes     99    100    106    105    135    136    142    141 
+               model  M3DH8  behav  stone
+ H8xxx     74  nodes    100    101    107    106    136    137    143    142 
+               model  M3DH8  behav  stone
+ H8xxx     75  nodes    101    102    108    107    137    138    144    143 
+               model  M3DH8  behav  stone
+ H8xxx     76  nodes    109    110    116    115    145    146    152    151 
+               model  M3DH8  behav  stone
+ H8xxx     77  nodes    110    111    117    116    146    147    153    152 
+               model  M3DH8  behav  stone
+ H8xxx     78  nodes    111    112    118    117    147    148    154    153 
+               model  M3DH8  behav  stone
+ H8xxx     79  nodes    112    113    119    118    148    149    155    154 
+               model  M3DH8  behav  stone
+ H8xxx     80  nodes    113    114    120    119    149    150    156    155 
+               model  M3DH8  behav  stone
+ H8xxx     81  nodes    115    116    122    121    151    152    158    157 
+               model  M3DH8  behav  stone
+ H8xxx     82  nodes    116    117    123    122    152    153    159    158 
+               model  M3DH8  behav  stone
+ H8xxx     83  nodes    117    118    124    123    153    154    160    159 
+               model  M3DH8  behav  stone
+ H8xxx     84  nodes    118    119    125    124    154    155    161    160 
+               model  M3DH8  behav  stone
+ H8xxx     85  nodes    119    120    126    125    155    156    162    161 
+               model  M3DH8  behav  stone
+ H8xxx     86  nodes    121    122    128    127    157    158    164    163 
+               model  M3DH8  behav  stone
+ H8xxx     87  nodes    122    123    129    128    158    159    165    164 
+               model  M3DH8  behav  stone
+ H8xxx     88  nodes    123    124    130    129    159    160    166    165 
+               model  M3DH8  behav  stone
+ H8xxx     89  nodes    124    125    131    130    160    161    167    166 
+               model  M3DH8  behav  stone
+ H8xxx     90  nodes    125    126    132    131    161    162    168    167 
+               model  M3DH8  behav  stone
+ H8xxx     91  nodes    127    128    134    133    163    164    170    169 
+               model  M3DH8  behav  stone
+ H8xxx     92  nodes    128    129    135    134    164    165    171    170 
+               model  M3DH8  behav  stone
+ H8xxx     93  nodes    129    130    136    135    165    166    172    171 
+               model  M3DH8  behav  stone
+ H8xxx     94  nodes    130    131    137    136    166    167    173    172 
+               model  M3DH8  behav  stone
+ H8xxx     95  nodes    131    132    138    137    167    168    174    173 
+               model  M3DH8  behav  stone
+ H8xxx     96  nodes    133    134    140    139    169    170    176    175 
+               model  M3DH8  behav  stone
+ H8xxx     97  nodes    134    135    141    140    170    171    177    176 
+               model  M3DH8  behav  stone
+ H8xxx     98  nodes    135    136    142    141    171    172    178    177 
+               model  M3DH8  behav  stone
+ H8xxx     99  nodes    136    137    143    142    172    173    179    178 
+               model  M3DH8  behav  stone
+ H8xxx    100  nodes    137    138    144    143    173    174    180    179 
+               model  M3DH8  behav  stone
+ H8xxx    101  nodes    145    146    152    151    181    182    188    187 
+               model  M3DH8  behav  stone
+ H8xxx    102  nodes    146    147    153    152    182    183    189    188 
+               model  M3DH8  behav  stone
+ H8xxx    103  nodes    147    148    154    153    183    184    190    189 
+               model  M3DH8  behav  stone
+ H8xxx    104  nodes    148    149    155    154    184    185    191    190 
+               model  M3DH8  behav  stone
+ H8xxx    105  nodes    149    150    156    155    185    186    192    191 
+               model  M3DH8  behav  stone
+ H8xxx    106  nodes    151    152    158    157    187    188    194    193 
+               model  M3DH8  behav  stone
+ H8xxx    107  nodes    152    153    159    158    188    189    195    194 
+               model  M3DH8  behav  stone
+ H8xxx    108  nodes    153    154    160    159    189    190    196    195 
+               model  M3DH8  behav  stone
+ H8xxx    109  nodes    154    155    161    160    190    191    197    196 
+               model  M3DH8  behav  stone
+ H8xxx    110  nodes    155    156    162    161    191    192    198    197 
+               model  M3DH8  behav  stone
+ H8xxx    111  nodes    157    158    164    163    193    194    200    199 
+               model  M3DH8  behav  stone
+ H8xxx    112  nodes    158    159    165    164    194    195    201    200 
+               model  M3DH8  behav  stone
+ H8xxx    113  nodes    159    160    166    165    195    196    202    201 
+               model  M3DH8  behav  stone
+ H8xxx    114  nodes    160    161    167    166    196    197    203    202 
+               model  M3DH8  behav  stone
+ H8xxx    115  nodes    161    162    168    167    197    198    204    203 
+               model  M3DH8  behav  stone
+ H8xxx    116  nodes    163    164    170    169    199    200    206    205 
+               model  M3DH8  behav  stone
+ H8xxx    117  nodes    164    165    171    170    200    201    207    206 
+               model  M3DH8  behav  stone
+ H8xxx    118  nodes    165    166    172    171    201    202    208    207 
+               model  M3DH8  behav  stone
+ H8xxx    119  nodes    166    167    173    172    202    203    209    208 
+               model  M3DH8  behav  stone
+ H8xxx    120  nodes    167    168    174    173    203    204    210    209 
+               model  M3DH8  behav  stone
+ H8xxx    121  nodes    169    170    176    175    205    206    212    211 
+               model  M3DH8  behav  stone
+ H8xxx    122  nodes    170    171    177    176    206    207    213    212 
+               model  M3DH8  behav  stone
+ H8xxx    123  nodes    171    172    178    177    207    208    214    213 
+               model  M3DH8  behav  stone
+ H8xxx    124  nodes    172    173    179    178    208    209    215    214 
+               model  M3DH8  behav  stone
+ H8xxx    125  nodes    173    174    180    179    209    210    216    215 
+               model  M3DH8  behav  stone
+$nodty                                                                  
+ NO3xx      1                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      2                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      3                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      4                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      5                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      6                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      7                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx      8                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx      9                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     10                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     11                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     12                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     13                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     14                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     15                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     16                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     17                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     18                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     19                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     20                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     21                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     22                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     23                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     24                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     25                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     26                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     27                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     28                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     29                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     30                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 0.0000000E+00  
+ NO3xx     31                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     32                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     33                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     34                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     35                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     36                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx     37                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     38                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     39                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     40                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     41                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     42                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     43                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     44                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     45                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     46                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     47                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     48                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     49                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     50                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     51                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     52                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     53                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     54                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     55                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     56                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     57                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     58                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     59                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     60                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     61                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     62                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     63                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     64                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     65                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     66                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 2.0000000E-01  
+ NO3xx     67                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     68                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     69                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     70                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     71                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     72                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E-01  
+ NO3xx     73                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     74                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     75                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     76                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     77                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     78                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx     79                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     80                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     81                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     82                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     83                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     84                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     85                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     86                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     87                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     88                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     89                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     90                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     91                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     92                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     93                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     94                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     95                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     96                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     97                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     98                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx     99                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx    100                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx    101                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx    102                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 4.0000000E-01  
+ NO3xx    103                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    104                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    105                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    106                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    107                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    108                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 4.0000000E-01  
+ NO3xx    109                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    110                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    111                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    112                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    113                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    114                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    115                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    116                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    117                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    118                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    119                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    120                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    121                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    122                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    123                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    124                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    125                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    126                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    127                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    128                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    129                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    130                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    131                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    132                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    133                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    134                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    135                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    136                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    137                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    138                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 6.0000000E-01  
+ NO3xx    139                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    140                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    141                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    142                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    143                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    144                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 6.0000000E-01  
+ NO3xx    145                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    146                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    147                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    148                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    149                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    150                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    151                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    152                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    153                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    154                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    155                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    156                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    157                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    158                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    159                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    160                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    161                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    162                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    163                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    164                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    165                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    166                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    167                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    168                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    169                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    170                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    171                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    172                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    173                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    174                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 8.0000000E-01  
+ NO3xx    175                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    176                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    177                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    178                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    179                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    180                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 8.0000000E-01  
+ NO3xx    181                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    182                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    183                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    184                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    185                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    186                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    187                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    188                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    189                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    190                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    191                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    192                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    193                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    194                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    195                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    196                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    197                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    198                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    199                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    200                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    201                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    202                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    203                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    204                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    205                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    206                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    207                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    208                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    209                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    210                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx    211                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    212                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    213                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    214                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    215                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx    216                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+$tacty
+ ASpx4      1  color  BLEUx  noda=  181  nodb=  182  nodc=  188  nodd=  187
++ASpx4      1  color  BLEUx  noda=  182  nodb=  183  nodc=  189  nodd=  188
++ASpx4      1  color  BLEUx  noda=  183  nodb=  184  nodc=  190  nodd=  189
++ASpx4      1  color  BLEUx  noda=  184  nodb=  185  nodc=  191  nodd=  190
++ASpx4      1  color  BLEUx  noda=  185  nodb=  186  nodc=  192  nodd=  191
++ASpx4      1  color  BLEUx  noda=  187  nodb=  188  nodc=  194  nodd=  193
++ASpx4      1  color  BLEUx  noda=  188  nodb=  189  nodc=  195  nodd=  194
++ASpx4      1  color  BLEUx  noda=  189  nodb=  190  nodc=  196  nodd=  195
++ASpx4      1  color  BLEUx  noda=  190  nodb=  191  nodc=  197  nodd=  196
++ASpx4      1  color  BLEUx  noda=  191  nodb=  192  nodc=  198  nodd=  197
++ASpx4      1  color  BLEUx  noda=  193  nodb=  194  nodc=  200  nodd=  199
++ASpx4      1  color  BLEUx  noda=  194  nodb=  195  nodc=  201  nodd=  200
++ASpx4      1  color  BLEUx  noda=  195  nodb=  196  nodc=  202  nodd=  201
++ASpx4      1  color  BLEUx  noda=  196  nodb=  197  nodc=  203  nodd=  202
++ASpx4      1  color  BLEUx  noda=  197  nodb=  198  nodc=  204  nodd=  203
++ASpx4      1  color  BLEUx  noda=  199  nodb=  200  nodc=  206  nodd=  205
++ASpx4      1  color  BLEUx  noda=  200  nodb=  201  nodc=  207  nodd=  206
++ASpx4      1  color  BLEUx  noda=  201  nodb=  202  nodc=  208  nodd=  207
++ASpx4      1  color  BLEUx  noda=  202  nodb=  203  nodc=  209  nodd=  208
++ASpx4      1  color  BLEUx  noda=  203  nodb=  204  nodc=  210  nodd=  209
++ASpx4      1  color  BLEUx  noda=  205  nodb=  206  nodc=  212  nodd=  211
++ASpx4      1  color  BLEUx  noda=  206  nodb=  207  nodc=  213  nodd=  212
++ASpx4      1  color  BLEUx  noda=  207  nodb=  208  nodc=  214  nodd=  213
++ASpx4      1  color  BLEUx  noda=  208  nodb=  209  nodc=  215  nodd=  214
++ASpx4      1  color  BLEUx  noda=  209  nodb=  210  nodc=  216  nodd=  215
+$$$$$$
+$bdyty                                                                  
+ MAILx      2
+$blmty
+ H8xxx      1  nodes      1      2      8      7     37     38     44     43 
+               model  M3DH8  behav  stone
+ H8xxx      2  nodes      2      3      9      8     38     39     45     44 
+               model  M3DH8  behav  stone
+ H8xxx      3  nodes      3      4     10      9     39     40     46     45 
+               model  M3DH8  behav  stone
+ H8xxx      4  nodes      4      5     11     10     40     41     47     46 
+               model  M3DH8  behav  stone
+ H8xxx      5  nodes      5      6     12     11     41     42     48     47 
+               model  M3DH8  behav  stone
+ H8xxx      6  nodes      7      8     14     13     43     44     50     49 
+               model  M3DH8  behav  stone
+ H8xxx      7  nodes      8      9     15     14     44     45     51     50 
+               model  M3DH8  behav  stone
+ H8xxx      8  nodes      9     10     16     15     45     46     52     51 
+               model  M3DH8  behav  stone
+ H8xxx      9  nodes     10     11     17     16     46     47     53     52 
+               model  M3DH8  behav  stone
+ H8xxx     10  nodes     11     12     18     17     47     48     54     53 
+               model  M3DH8  behav  stone
+ H8xxx     11  nodes     13     14     20     19     49     50     56     55 
+               model  M3DH8  behav  stone
+ H8xxx     12  nodes     14     15     21     20     50     51     57     56 
+               model  M3DH8  behav  stone
+ H8xxx     13  nodes     15     16     22     21     51     52     58     57 
+               model  M3DH8  behav  stone
+ H8xxx     14  nodes     16     17     23     22     52     53     59     58 
+               model  M3DH8  behav  stone
+ H8xxx     15  nodes     17     18     24     23     53     54     60     59 
+               model  M3DH8  behav  stone
+ H8xxx     16  nodes     19     20     26     25     55     56     62     61 
+               model  M3DH8  behav  stone
+ H8xxx     17  nodes     20     21     27     26     56     57     63     62 
+               model  M3DH8  behav  stone
+ H8xxx     18  nodes     21     22     28     27     57     58     64     63 
+               model  M3DH8  behav  stone
+ H8xxx     19  nodes     22     23     29     28     58     59     65     64 
+               model  M3DH8  behav  stone
+ H8xxx     20  nodes     23     24     30     29     59     60     66     65 
+               model  M3DH8  behav  stone
+ H8xxx     21  nodes     25     26     32     31     61     62     68     67 
+               model  M3DH8  behav  stone
+ H8xxx     22  nodes     26     27     33     32     62     63     69     68 
+               model  M3DH8  behav  stone
+ H8xxx     23  nodes     27     28     34     33     63     64     70     69 
+               model  M3DH8  behav  stone
+ H8xxx     24  nodes     28     29     35     34     64     65     71     70 
+               model  M3DH8  behav  stone
+ H8xxx     25  nodes     29     30     36     35     65     66     72     71 
+               model  M3DH8  behav  stone
+ H8xxx     26  nodes     37     38     44     43     73     74     80     79 
+               model  M3DH8  behav  stone
+ H8xxx     27  nodes     38     39     45     44     74     75     81     80 
+               model  M3DH8  behav  stone
+ H8xxx     28  nodes     39     40     46     45     75     76     82     81 
+               model  M3DH8  behav  stone
+ H8xxx     29  nodes     40     41     47     46     76     77     83     82 
+               model  M3DH8  behav  stone
+ H8xxx     30  nodes     41     42     48     47     77     78     84     83 
+               model  M3DH8  behav  stone
+ H8xxx     31  nodes     43     44     50     49     79     80     86     85 
+               model  M3DH8  behav  stone
+ H8xxx     32  nodes     44     45     51     50     80     81     87     86 
+               model  M3DH8  behav  stone
+ H8xxx     33  nodes     45     46     52     51     81     82     88     87 
+               model  M3DH8  behav  stone
+ H8xxx     34  nodes     46     47     53     52     82     83     89     88 
+               model  M3DH8  behav  stone
+ H8xxx     35  nodes     47     48     54     53     83     84     90     89 
+               model  M3DH8  behav  stone
+ H8xxx     36  nodes     49     50     56     55     85     86     92     91 
+               model  M3DH8  behav  stone
+ H8xxx     37  nodes     50     51     57     56     86     87     93     92 
+               model  M3DH8  behav  stone
+ H8xxx     38  nodes     51     52     58     57     87     88     94     93 
+               model  M3DH8  behav  stone
+ H8xxx     39  nodes     52     53     59     58     88     89     95     94 
+               model  M3DH8  behav  stone
+ H8xxx     40  nodes     53     54     60     59     89     90     96     95 
+               model  M3DH8  behav  stone
+ H8xxx     41  nodes     55     56     62     61     91     92     98     97 
+               model  M3DH8  behav  stone
+ H8xxx     42  nodes     56     57     63     62     92     93     99     98 
+               model  M3DH8  behav  stone
+ H8xxx     43  nodes     57     58     64     63     93     94    100     99 
+               model  M3DH8  behav  stone
+ H8xxx     44  nodes     58     59     65     64     94     95    101    100 
+               model  M3DH8  behav  stone
+ H8xxx     45  nodes     59     60     66     65     95     96    102    101 
+               model  M3DH8  behav  stone
+ H8xxx     46  nodes     61     62     68     67     97     98    104    103 
+               model  M3DH8  behav  stone
+ H8xxx     47  nodes     62     63     69     68     98     99    105    104 
+               model  M3DH8  behav  stone
+ H8xxx     48  nodes     63     64     70     69     99    100    106    105 
+               model  M3DH8  behav  stone
+ H8xxx     49  nodes     64     65     71     70    100    101    107    106 
+               model  M3DH8  behav  stone
+ H8xxx     50  nodes     65     66     72     71    101    102    108    107 
+               model  M3DH8  behav  stone
+ H8xxx     51  nodes     73     74     80     79    109    110    116    115 
+               model  M3DH8  behav  stone
+ H8xxx     52  nodes     74     75     81     80    110    111    117    116 
+               model  M3DH8  behav  stone
+ H8xxx     53  nodes     75     76     82     81    111    112    118    117 
+               model  M3DH8  behav  stone
+ H8xxx     54  nodes     76     77     83     82    112    113    119    118 
+               model  M3DH8  behav  stone
+ H8xxx     55  nodes     77     78     84     83    113    114    120    119 
+               model  M3DH8  behav  stone
+ H8xxx     56  nodes     79     80     86     85    115    116    122    121 
+               model  M3DH8  behav  stone
+ H8xxx     57  nodes     80     81     87     86    116    117    123    122 
+               model  M3DH8  behav  stone
+ H8xxx     58  nodes     81     82     88     87    117    118    124    123 
+               model  M3DH8  behav  stone
+ H8xxx     59  nodes     82     83     89     88    118    119    125    124 
+               model  M3DH8  behav  stone
+ H8xxx     60  nodes     83     84     90     89    119    120    126    125 
+               model  M3DH8  behav  stone
+ H8xxx     61  nodes     85     86     92     91    121    122    128    127 
+               model  M3DH8  behav  stone
+ H8xxx     62  nodes     86     87     93     92    122    123    129    128 
+               model  M3DH8  behav  stone
+ H8xxx     63  nodes     87     88     94     93    123    124    130    129 
+               model  M3DH8  behav  stone
+ H8xxx     64  nodes     88     89     95     94    124    125    131    130 
+               model  M3DH8  behav  stone
+ H8xxx     65  nodes     89     90     96     95    125    126    132    131 
+               model  M3DH8  behav  stone
+ H8xxx     66  nodes     91     92     98     97    127    128    134    133 
+               model  M3DH8  behav  stone
+ H8xxx     67  nodes     92     93     99     98    128    129    135    134 
+               model  M3DH8  behav  stone
+ H8xxx     68  nodes     93     94    100     99    129    130    136    135 
+               model  M3DH8  behav  stone
+ H8xxx     69  nodes     94     95    101    100    130    131    137    136 
+               model  M3DH8  behav  stone
+ H8xxx     70  nodes     95     96    102    101    131    132    138    137 
+               model  M3DH8  behav  stone
+ H8xxx     71  nodes     97     98    104    103    133    134    140    139 
+               model  M3DH8  behav  stone
+ H8xxx     72  nodes     98     99    105    104    134    135    141    140 
+               model  M3DH8  behav  stone
+ H8xxx     73  nodes     99    100    106    105    135    136    142    141 
+               model  M3DH8  behav  stone
+ H8xxx     74  nodes    100    101    107    106    136    137    143    142 
+               model  M3DH8  behav  stone
+ H8xxx     75  nodes    101    102    108    107    137    138    144    143 
+               model  M3DH8  behav  stone
+ H8xxx     76  nodes    109    110    116    115    145    146    152    151 
+               model  M3DH8  behav  stone
+ H8xxx     77  nodes    110    111    117    116    146    147    153    152 
+               model  M3DH8  behav  stone
+ H8xxx     78  nodes    111    112    118    117    147    148    154    153 
+               model  M3DH8  behav  stone
+ H8xxx     79  nodes    112    113    119    118    148    149    155    154 
+               model  M3DH8  behav  stone
+ H8xxx     80  nodes    113    114    120    119    149    150    156    155 
+               model  M3DH8  behav  stone
+ H8xxx     81  nodes    115    116    122    121    151    152    158    157 
+               model  M3DH8  behav  stone
+ H8xxx     82  nodes    116    117    123    122    152    153    159    158 
+               model  M3DH8  behav  stone
+ H8xxx     83  nodes    117    118    124    123    153    154    160    159 
+               model  M3DH8  behav  stone
+ H8xxx     84  nodes    118    119    125    124    154    155    161    160 
+               model  M3DH8  behav  stone
+ H8xxx     85  nodes    119    120    126    125    155    156    162    161 
+               model  M3DH8  behav  stone
+ H8xxx     86  nodes    121    122    128    127    157    158    164    163 
+               model  M3DH8  behav  stone
+ H8xxx     87  nodes    122    123    129    128    158    159    165    164 
+               model  M3DH8  behav  stone
+ H8xxx     88  nodes    123    124    130    129    159    160    166    165 
+               model  M3DH8  behav  stone
+ H8xxx     89  nodes    124    125    131    130    160    161    167    166 
+               model  M3DH8  behav  stone
+ H8xxx     90  nodes    125    126    132    131    161    162    168    167 
+               model  M3DH8  behav  stone
+ H8xxx     91  nodes    127    128    134    133    163    164    170    169 
+               model  M3DH8  behav  stone
+ H8xxx     92  nodes    128    129    135    134    164    165    171    170 
+               model  M3DH8  behav  stone
+ H8xxx     93  nodes    129    130    136    135    165    166    172    171 
+               model  M3DH8  behav  stone
+ H8xxx     94  nodes    130    131    137    136    166    167    173    172 
+               model  M3DH8  behav  stone
+ H8xxx     95  nodes    131    132    138    137    167    168    174    173 
+               model  M3DH8  behav  stone
+ H8xxx     96  nodes    133    134    140    139    169    170    176    175 
+               model  M3DH8  behav  stone
+ H8xxx     97  nodes    134    135    141    140    170    171    177    176 
+               model  M3DH8  behav  stone
+ H8xxx     98  nodes    135    136    142    141    171    172    178    177 
+               model  M3DH8  behav  stone
+ H8xxx     99  nodes    136    137    143    142    172    173    179    178 
+               model  M3DH8  behav  stone
+ H8xxx    100  nodes    137    138    144    143    173    174    180    179 
+               model  M3DH8  behav  stone
+ H8xxx    101  nodes    145    146    152    151    181    182    188    187 
+               model  M3DH8  behav  stone
+ H8xxx    102  nodes    146    147    153    152    182    183    189    188 
+               model  M3DH8  behav  stone
+ H8xxx    103  nodes    147    148    154    153    183    184    190    189 
+               model  M3DH8  behav  stone
+ H8xxx    104  nodes    148    149    155    154    184    185    191    190 
+               model  M3DH8  behav  stone
+ H8xxx    105  nodes    149    150    156    155    185    186    192    191 
+               model  M3DH8  behav  stone
+ H8xxx    106  nodes    151    152    158    157    187    188    194    193 
+               model  M3DH8  behav  stone
+ H8xxx    107  nodes    152    153    159    158    188    189    195    194 
+               model  M3DH8  behav  stone
+ H8xxx    108  nodes    153    154    160    159    189    190    196    195 
+               model  M3DH8  behav  stone
+ H8xxx    109  nodes    154    155    161    160    190    191    197    196 
+               model  M3DH8  behav  stone
+ H8xxx    110  nodes    155    156    162    161    191    192    198    197 
+               model  M3DH8  behav  stone
+ H8xxx    111  nodes    157    158    164    163    193    194    200    199 
+               model  M3DH8  behav  stone
+ H8xxx    112  nodes    158    159    165    164    194    195    201    200 
+               model  M3DH8  behav  stone
+ H8xxx    113  nodes    159    160    166    165    195    196    202    201 
+               model  M3DH8  behav  stone
+ H8xxx    114  nodes    160    161    167    166    196    197    203    202 
+               model  M3DH8  behav  stone
+ H8xxx    115  nodes    161    162    168    167    197    198    204    203 
+               model  M3DH8  behav  stone
+ H8xxx    116  nodes    163    164    170    169    199    200    206    205 
+               model  M3DH8  behav  stone
+ H8xxx    117  nodes    164    165    171    170    200    201    207    206 
+               model  M3DH8  behav  stone
+ H8xxx    118  nodes    165    166    172    171    201    202    208    207 
+               model  M3DH8  behav  stone
+ H8xxx    119  nodes    166    167    173    172    202    203    209    208 
+               model  M3DH8  behav  stone
+ H8xxx    120  nodes    167    168    174    173    203    204    210    209 
+               model  M3DH8  behav  stone
+ H8xxx    121  nodes    169    170    176    175    205    206    212    211 
+               model  M3DH8  behav  stone
+ H8xxx    122  nodes    170    171    177    176    206    207    213    212 
+               model  M3DH8  behav  stone
+ H8xxx    123  nodes    171    172    178    177    207    208    214    213 
+               model  M3DH8  behav  stone
+ H8xxx    124  nodes    172    173    179    178    208    209    215    214 
+               model  M3DH8  behav  stone
+ H8xxx    125  nodes    173    174    180    179    209    210    216    215 
+               model  M3DH8  behav  stone
+$nodty                                                                  
+ NO3xx      1                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      2                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      3                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      4                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      5                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      6                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      7                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx      8                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx      9                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     10                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     11                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     12                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     13                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     14                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     15                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     16                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     17                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     18                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     19                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     20                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     21                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     22                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     23                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     24                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     25                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     26                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     27                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     28                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     29                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     30                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.0000000E+00  
+ NO3xx     31                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     32                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     33                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     34                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     35                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     36                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx     37                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     38                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     39                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     40                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     41                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     42                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     43                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     44                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     45                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     46                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     47                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     48                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     49                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     50                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     51                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     52                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     53                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     54                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     55                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     56                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     57                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     58                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     59                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     60                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     61                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     62                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     63                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     64                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     65                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     66                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.2000000E+00  
+ NO3xx     67                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     68                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     69                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     70                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     71                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     72                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.2000000E+00  
+ NO3xx     73                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     74                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     75                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     76                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     77                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     78                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx     79                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     80                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     81                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     82                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     83                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     84                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     85                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     86                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     87                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     88                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     89                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     90                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     91                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     92                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     93                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     94                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     95                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     96                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     97                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     98                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx     99                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx    100                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx    101                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx    102                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.4000000E+00  
+ NO3xx    103                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    104                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    105                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    106                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    107                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    108                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.4000000E+00  
+ NO3xx    109                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    110                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    111                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    112                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    113                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    114                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    115                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    116                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    117                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    118                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    119                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    120                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    121                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    122                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    123                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    124                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    125                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    126                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    127                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    128                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    129                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    130                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    131                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    132                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    133                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    134                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    135                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    136                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    137                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    138                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.6000000E+00  
+ NO3xx    139                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    140                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    141                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    142                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    143                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    144                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.6000000E+00  
+ NO3xx    145                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    146                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    147                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    148                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    149                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    150                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    151                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    152                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    153                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    154                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    155                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    156                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    157                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    158                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    159                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    160                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    161                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    162                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    163                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    164                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    165                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    166                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    167                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    168                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    169                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    170                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    171                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    172                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    173                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    174                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 1.8000000E+00  
+ NO3xx    175                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    176                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    177                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    178                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    179                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    180                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.8000000E+00  
+ NO3xx    181                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    182                coo1= 2.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    183                coo1= 4.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    184                coo1= 6.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    185                coo1= 8.0000000E-01  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    186                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    187                coo1= 0.0000000E+00  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    188                coo1= 2.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    189                coo1= 4.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    190                coo1= 6.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    191                coo1= 8.0000000E-01  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    192                coo1= 1.0000000E+00  coo2= 2.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    193                coo1= 0.0000000E+00  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    194                coo1= 2.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    195                coo1= 4.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    196                coo1= 6.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    197                coo1= 8.0000000E-01  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    198                coo1= 1.0000000E+00  coo2= 4.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    199                coo1= 0.0000000E+00  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    200                coo1= 2.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    201                coo1= 4.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    202                coo1= 6.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    203                coo1= 8.0000000E-01  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    204                coo1= 1.0000000E+00  coo2= 6.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    205                coo1= 0.0000000E+00  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    206                coo1= 2.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    207                coo1= 4.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    208                coo1= 6.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    209                coo1= 8.0000000E-01  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    210                coo1= 1.0000000E+00  coo2= 8.0000000E-01  coo3= 2.0000000E+00  
+ NO3xx    211                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    212                coo1= 2.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    213                coo1= 4.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    214                coo1= 6.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    215                coo1= 8.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx    216                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+$tacty
+ CSpx4      1  color  BLEUx  noda=    1  nodb=    7  nodc=    8  nodd=    2
++CSpx4      1  color  BLEUx  noda=    2  nodb=    8  nodc=    9  nodd=    3
++CSpx4      1  color  BLEUx  noda=    3  nodb=    9  nodc=   10  nodd=    4
++CSpx4      1  color  BLEUx  noda=    4  nodb=   10  nodc=   11  nodd=    5
++CSpx4      1  color  BLEUx  noda=    5  nodb=   11  nodc=   12  nodd=    6
++CSpx4      1  color  BLEUx  noda=    7  nodb=   13  nodc=   14  nodd=    8
++CSpx4      1  color  BLEUx  noda=    8  nodb=   14  nodc=   15  nodd=    9
++CSpx4      1  color  BLEUx  noda=    9  nodb=   15  nodc=   16  nodd=   10
++CSpx4      1  color  BLEUx  noda=   10  nodb=   16  nodc=   17  nodd=   11
++CSpx4      1  color  BLEUx  noda=   11  nodb=   17  nodc=   18  nodd=   12
++CSpx4      1  color  BLEUx  noda=   13  nodb=   19  nodc=   20  nodd=   14
++CSpx4      1  color  BLEUx  noda=   14  nodb=   20  nodc=   21  nodd=   15
++CSpx4      1  color  BLEUx  noda=   15  nodb=   21  nodc=   22  nodd=   16
++CSpx4      1  color  BLEUx  noda=   16  nodb=   22  nodc=   23  nodd=   17
++CSpx4      1  color  BLEUx  noda=   17  nodb=   23  nodc=   24  nodd=   18
++CSpx4      1  color  BLEUx  noda=   19  nodb=   25  nodc=   26  nodd=   20
++CSpx4      1  color  BLEUx  noda=   20  nodb=   26  nodc=   27  nodd=   21
++CSpx4      1  color  BLEUx  noda=   21  nodb=   27  nodc=   28  nodd=   22
++CSpx4      1  color  BLEUx  noda=   22  nodb=   28  nodc=   29  nodd=   23
++CSpx4      1  color  BLEUx  noda=   23  nodb=   29  nodc=   30  nodd=   24
++CSpx4      1  color  BLEUx  noda=   25  nodb=   31  nodc=   32  nodd=   26
++CSpx4      1  color  BLEUx  noda=   26  nodb=   32  nodc=   33  nodd=   27
++CSpx4      1  color  BLEUx  noda=   27  nodb=   33  nodc=   34  nodd=   28
++CSpx4      1  color  BLEUx  noda=   28  nodb=   34  nodc=   35  nodd=   29
++CSpx4      1  color  BLEUx  noda=   29  nodb=   35  nodc=   36  nodd=   30
+$$$$$$
+      
