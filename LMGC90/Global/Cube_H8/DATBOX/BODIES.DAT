@@ -46,10 +46,10 @@ $nodty
  NO3xx     26                coo1= 5.0000000E-01  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
  NO3xx     27                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
 $tacty
- ASpx4      1  color  BLEUx  noda=   19  nodb=   20  nodc=   23  nodd=   22
-+ASpx4      1  color  BLEUx  noda=   20  nodb=   21  nodc=   24  nodd=   23
-+ASpx4      1  color  BLEUx  noda=   22  nodb=   23  nodc=   26  nodd=   25
-+ASpx4      1  color  BLEUx  noda=   23  nodb=   24  nodc=   27  nodd=   26
+ ASpxx      1  color  BLEUx  noda=   19  nodb=   20  nodc=   23  nodd=   22
++ASpxx      1  color  BLEUx  noda=   20  nodb=   21  nodc=   24  nodd=   23
++ASpxx      1  color  BLEUx  noda=   22  nodb=   23  nodc=   26  nodd=   25
++ASpxx      1  color  BLEUx  noda=   23  nodb=   24  nodc=   27  nodd=   26
 $$$$$$
 $bdyty                                                                  
  MAILx      2
@@ -99,9 +99,9 @@ $nodty
  NO3xx     26                coo1= 5.0000000E-01  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
  NO3xx     27                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
 $tacty
- CSpx4      1  color  BLEUx  noda=    1  nodb=    4  nodc=    5  nodd=    2
-+CSpx4      1  color  BLEUx  noda=    2  nodb=    5  nodc=    6  nodd=    3
-+CSpx4      1  color  BLEUx  noda=    4  nodb=    7  nodc=    8  nodd=    5
-+CSpx4      1  color  BLEUx  noda=    5  nodb=    8  nodc=    9  nodd=    6
+ CSpxx      1  color  BLEUx  noda=    1  nodb=    4  nodc=    5  nodd=    2
++CSpxx      1  color  BLEUx  noda=    2  nodb=    5  nodc=    6  nodd=    3
++CSpxx      1  color  BLEUx  noda=    4  nodb=    7  nodc=    8  nodd=    5
++CSpxx      1  color  BLEUx  noda=    5  nodb=    8  nodc=    9  nodd=    6
 $$$$$$
       

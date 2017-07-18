@@ -48,7 +48,7 @@ cube=buildMeshedAvatar(mesh=mesh_cube, model=m3Dl, material=stone)
 
 ## contacteurs :
 #   * antagonistes sur la face du haut
-cube.addContactors(group='up', type='ASpx4', color='BLEUx')
+cube.addContactors(group='up', type='ASpxx', color='BLEUx')
 cube.imposeDrivenDof(group='down',component=[1,2,3],dofty='vlocy')
 
 # ajout du cube dans le conteneur de corps
@@ -63,7 +63,7 @@ cube_2=buildMeshedAvatar(mesh=mesh_cube_2, model=m3Dl, material=stone)
 # contacteurs :
 #   * candidats sur la face du bas
 
-cube_2.addContactors(group='down', type='CSpx4', color='BLEUx')
+cube_2.addContactors(group='down', type='CSpxx', color='BLEUx')
 
 # on place le deuxieme cube sur le premier
 cube_2.translate(dz=1.)

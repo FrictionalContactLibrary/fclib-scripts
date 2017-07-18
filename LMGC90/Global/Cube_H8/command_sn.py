@@ -13,13 +13,13 @@ SetDimension(3,0)
 # info gestion du temps
 dt = 1.e-4
 theta = 0.505
-nb_steps = 200
+nb_steps = 2000
 
 # bavardage de certaines fonctions
 echo = 0
 
 # info generation fichier visu
-freq_display = 1
+freq_display = 10
 ref_radius = 0.1
 
 # info contact
@@ -27,11 +27,11 @@ freq_detect = 1
 
 #       123456789012345678901234567890
 itermax = 5000
-tol = 1.e-8  
+tol = 1.e-12
 relax = 1. #0.25 
 #       123456789012345678901234567890
 solver='globalac                          '
-freq_output = 4
+freq_output = 10
 verbose=0
 SiconosNumerics_SetParameters(solver,tol,10,itermax,relax,verbose,3,freq_output)
 
@@ -204,6 +204,7 @@ for k in xrange(1,nb_steps+1,1):
    utilities_logMes('COMPUTE DOF, FIELDS, etc.')
    mecaMAILx_ComputeDof()
    RBDY3_ComputeDof()
+   mecaMAILx_ComputeField()
    #
    utilities_logMes('UPDATE DOF, FIELDS')
    TimeEvolution_UpdateStep()
