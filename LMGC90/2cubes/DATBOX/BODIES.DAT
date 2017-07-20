@@ -1,0 +1,37 @@
+$bdyty
+ MAILx      1
+$blmty
+ H8xxx      1  nodes      1      2      4      3      5      6      8      7
+               model  M3DH8  behav  stone
+$nodty
+ NO3xx      1                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      2                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      3                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      4                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 0.0000000E+00  
+ NO3xx      5                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      6                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      7                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      8                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+$tacty
+ ASpxx      1  color  BLEUx  noda=    5  nodb=    6  nodc=    8  nodd=    7
+$$$$$$
+
+$bdyty
+ MAILx      2
+$blmty
+ H8xxx      1  nodes      1      2      4      3      5      6      8      7
+               model  M3DH8  behav  stone
+$nodty
+ NO3xx      1                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      2                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      3                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      4                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 1.0000000E+00  
+ NO3xx      5                coo1= 0.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx      6                coo1= 1.0000000E+00  coo2= 0.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx      7                coo1= 0.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+ NO3xx      8                coo1= 1.0000000E+00  coo2= 1.0000000E+00  coo3= 2.0000000E+00  
+$tacty
+ CSpx0      1  color  BLEUx  noda=    1  nodb=    3  nodc=    4  nodd=    2
+$$$$$$
+
+      

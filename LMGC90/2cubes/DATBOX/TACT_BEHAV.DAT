@@ -1,0 +1,10 @@
+
+$behav 
+ gapc0  VEL_SGR_CLB                     fric= 3.0000000e-01
+      
+$seety
+ cdbdy  cdtac  cdcol  behav  anbdy  antac  ancol       alert
+ MAILx  CSxxx  BLEUx  gapc0  MAILx  ASpxx  BLEUx       1.0000000e-01
++                                                      1.0000000e+00
+      
+      
