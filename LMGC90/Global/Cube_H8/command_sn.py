@@ -26,13 +26,13 @@ ref_radius = 0.1
 freq_detect = 1
 
 #       123456789012345678901234567890
-itermax = 5000
+itermax = 50
 tol = 1.e-12
 relax = 1. #0.25 
 #       123456789012345678901234567890
 solver='globalac                          '
 freq_output = 10
-verbose=0
+verbose=1
 SiconosNumerics_SetParameters(solver,tol,10,itermax,relax,verbose,3,freq_output)
 
 ###
@@ -158,7 +158,7 @@ CSxxx_PushPreconNodes()
 ASpxx_PushPreconNodes()
 mecaMAILx_ComputePreconW()
 
-for k in xrange(1,nb_steps+1,1):
+for k in range(1,nb_steps+1,1):
    #
    utilities_logMes('increment : '+str(k))
    #
