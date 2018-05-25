@@ -11,9 +11,9 @@ SetDimension(3,0)
 
 ####
 # info gestion du temps
-dt = 1.e-4
+dt = 0.1 #1.e-4
 theta = 0.505
-nb_steps = 1 #200
+nb_steps = 10 #200
 
 # bavardage de certaines fonctions
 echo = 0

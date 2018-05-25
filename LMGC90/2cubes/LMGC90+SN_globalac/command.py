@@ -11,31 +11,38 @@ SetDimension(3,0)
 
 ####
 # info gestion du temps
-dt = 1.e-4
+dt = 1.e-6
 theta = 0.505
-nb_steps = 1 #200
+nb_steps =  1
 
 # bavardage de certaines fonctions
 echo = 0
 
 # info generation fichier visu
-freq_display = 1
-freq_write= 1 #50
+freq_display = 10
+freq_write= 10 #50
 
 # info contact
 freq_detect = 1
 ref_radius = 0.1
 
 #       123456789012345678901234567890
-itermax = 500
+itermax = 200
 tol = 1.e-10
 freq_err=1
 relax = 1.
 #       123456789012345678901234567890
-#solver='localac_wr                    '
 solver='globalac                      '
+#solver='globalac_nls                  '
+#solver='localac_wr                         '
+#solver='nlgs_wr                         '
+#solver='nsgs                           '
+
+#solver='vi_eg                          '
+#solver='vi_fpp                         '
+
 verbose = 1 # 0: no 1: yes
-output =  0 #0 off, 1 C file, 2 dat, 3 FClib
+output =  3 #0 off, 1 C file, 2 dat, 3 FClib
 freq_output = 1 #
 ###
 TimeEvolution_SetTimeStep(dt)
@@ -45,7 +52,6 @@ SiconosNumerics_SetParameters(solver, tol, freq_err, itermax, relax, verbose, ou
 
 mecaMAILx_SparseStorage()
 mecaMAILx_UnspecifiedShape()
-
 
 ### lecture du modele ###
 utilities_logMes('READ BODIES')
@@ -155,7 +161,7 @@ mecaMAILx_ComputeBulk()
 
 mecaMAILx_AssembKT()
 
-for k in xrange(1,nb_steps+1,1):
+for k in range(1,nb_steps+1,1):
    #
    utilities_logMes('increment : '+str(k))
    #
@@ -179,8 +185,10 @@ for k in xrange(1,nb_steps+1,1):
    mecaMAILx_AssembRHS()
 
    utilities_logMes('COMPUTE Free Vlocy')
-   mecaMAILx_ComputeFreeVelocity()
+   mecaMAILx_PrepGlobalSolver()
+   #mecaMAILx_ComputeFreeVelocity()   
    RBDY3_ComputeFreeVelocity()
+
    #
    utilities_logMes('SELECT PROX TACTORS')
    overall_SelectProxTactors(freq_detect)
@@ -197,7 +205,8 @@ for k in xrange(1,nb_steps+1,1):
    CSPRx_StockRloc()
    #
    utilities_logMes('COMPUTE DOF, FIELDS, etc.')
-   mecaMAILx_ComputeDof()
+   mecaMAILx_PostGlobalSolver()
+   #mecaMAILx_ComputeDof()   
    mecaMAILx_ComputeField()
    RBDY3_ComputeDof()
    #

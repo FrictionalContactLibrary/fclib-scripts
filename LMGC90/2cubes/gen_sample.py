@@ -8,10 +8,6 @@ if (not os.path.isdir('./DATBOX')):
 
 from pylmgc90.pre import *
 
-# number of elements on one side of the cube
-nb_e = 1
-
-
 # definition des conteneurs:
 #   * de corps
 bodies = avatars()
@@ -42,6 +38,7 @@ mats.addMaterial(stone)
 
 # construction des maillages :
 
+nb_e = 2
 
 # on contruit le maillage du cube
 mesh_cube=buildMeshH8(x0=0., y0=0., z0=0., lx=1., ly=1., lz=1., nb_elem_x=nb_e, nb_elem_y=nb_e, nb_elem_z=nb_e)
@@ -52,7 +49,8 @@ cube=buildMeshedAvatar(mesh=mesh_cube, model=m3Dl, material=stone)
 ## contacteurs :
 #   * antagonistes sur la face du haut
 cube.addContactors(group='up', shape='ASpxx', color='BLEUx')
-cube.imposeDrivenDof(group='down',component=3,dofty='force',ct=1000., rampi=1., ramp=0.)
+cube.imposeDrivenDof(group='down',component=[1,2,3],dofty='vlocy')
+#cube.imposeDrivenDof(group='down',component=3,dofty='force',ct=1000., rampi=0., ramp=10.)
 
 # ajout du cube dans le conteneur de corps
 bodies += cube
@@ -67,7 +65,9 @@ cube_2=buildMeshedAvatar(mesh=mesh_cube_2, model=m3Dl, material=stone)
 #   * candidats sur la face du bas
 
 cube_2.addContactors(group='down', shape='CSpxx', color='BLEUx', quadrature=0)
-cube_2.imposeDrivenDof(group='up',component=3,dofty='force',ct=-1000., rampi=1., ramp=0.)
+cube_2.imposeDrivenDof(group='up',component=3,dofty='force',ct=-1., rampi=0., ramp=1.)
+cube_2.imposeDrivenDof(group='up',component=[1,2],dofty='vlocy')
+#cube_2.imposeDrivenDof(group='up',component=3,dofty='force',ct=-1000., rampi=0., ramp=10.)
 
 # on place le deuxieme cube sur le premier
 cube_2.translate(dz=1.)
@@ -99,8 +99,5 @@ writeBulkBehav(mats, chemin='./DATBOX/', dim=dim, gravy=[0., 0., 0.])
 writeTactBehav(tacts,svs,chemin='DATBOX/')
 writeVlocRlocIni(chemin='DATBOX/')
 
-try:
- visuAvatars(bodies)
-except:
- pass
+visuAvatars(bodies)
 
