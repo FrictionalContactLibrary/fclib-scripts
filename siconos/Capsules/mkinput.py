@@ -1,12 +1,10 @@
+
 #!/usr/bin/env python
 
 from math import cos, sin, pi
 from numpy.linalg import norm
-
-from Siconos.Mechanics.ContactDetection.Bullet import btQuaternion
-
-from Siconos.Mechanics.ContactDetection.Bullet.BulletWrap import __mul__ as mul
-
+from siconos.mechanics.collision.bullet import btQuaternion
+from siconos.mechanics.collision.bullet import __mul__ as mul
 from random import random
 
 theta1 = pi / 2

@@ -222,10 +222,10 @@ class ShapeCollection():
             self._tri[index], self._shape[index] = loadMesh(self._url[index])
             
             if isinstance(self._shape[index],btConvexHullShape):
-                name = 'ConvexHull' + str(index)
+                name = 'ConvexHull'
                 points = self._tri[index]
                 #print('points', points)
-                io.add_convex_shape(name,points)
+                io.add_convex_shape(name + '_shp_' + str(index),points)
             
             #print('self._tri[index],self._shape[index]', self._tri[index],self._shape[index])
             #input()
@@ -241,9 +241,9 @@ class ShapeCollection():
                 attrs = [float(x) for x in self._attributes[index][0]]
             primitive = self._primitive[name]
             
-            io.add_primitive_shape(name,primitive,attrs)
+            io.add_primitive_shape(name+ '_shp_' + str(index),primitive,attrs)
             
-        return name
+        return name + '_shp_'  + str(index)
 
     
 
@@ -305,7 +305,7 @@ class InputData():
                 ids = -1
                 idd = 1
                 for line in input_file:
-                    print('line',line)
+                    #print('line',line)
                     sline = shlex.split(line)
                     if len(sline) > 3:
                         shape_id = int(sline[0])
@@ -320,16 +320,12 @@ class InputData():
                         #print('q0, q1, q2, w, x, y, z, v0, v1, v2, v3, v4, v5', q0, q1, q2, w, x, y, z, v0, v1, v2, v3, v4, v5 )
                         if group_id < 0:
 
-                            print(self._shape._attributes)
-                            print(self._shape._shape)
-                            print(self._shape._url)
-
                             # add shape 
                             name = self._shape.create_shape(self._io, shape_id)
-                            print('name', name )
+                            #print('name', name )
                             
                             # add _object
-                            self._io.add_object(name+'_bdy',
+                            self._io.add_object(name+'_bdy_'+str(-ids),
                                                 [Contactor(name)],
                                                 translation=[q0,q1,q2],
                                                 orientation = [w,x,y,z],
@@ -354,7 +350,7 @@ class InputData():
                             # self._static_cobjs.append(static_cobj)
                             # broadphase.addStaticObject(static_cobj, abs(group_id)-1)
                             # bind_file.write('{0} {1}\n'.format(ids, shape_id))
-                            # ids -= 1
+                            ids -= 1
 
                         else:
                             # a moving object
@@ -362,7 +358,7 @@ class InputData():
 
                             # add shape 
                             name = self._shape.create_shape(self._io, shape_id)
-                            print('name', name )
+
                             # add _object
                             body=self._io.add_object(name+'_bdy_'+str(idd),
                                                      [Contactor(name)],
@@ -390,7 +386,7 @@ class InputData():
                             # self._osi.insertDynamicalSystem(body)
                             bind_file.write('{0} {1}\n'.format(idd, shape_id))
                             idd += 1
-
-                print('#static objects', ids)
-                print('#dynamics objects', idd)
+                print('Imported objects:')
+                print('  number of static objects', ids)
+                print('  number of dynamics objects', idd)
                 #input()

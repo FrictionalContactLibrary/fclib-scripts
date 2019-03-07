@@ -29,19 +29,19 @@ with MechanicsHdf5Runner() as io:
 
 hstep = 0.0005
 
-itermax = 10000
+itermax = 100000
 dump_probability = .02
 theta = 0.50
 tolerance = 1e-8
 import os
-if not os.path.exists('./BoxesStack/'):
-    os.mkdir('./BoxesStack/')
+if not os.path.exists('./Capsules/'):
+    os.mkdir('./Capsules/')
     
 solver=Numerics.SICONOS_FRICTION_3D_NSGS
-fileName = "./BoxesStack/BoxesStack1"
-title = "Boxes Stack"
+fileName = "./Capsules/Capsules"
+title = "Capsules"
 description = """
-Boxes (Cubes) stacking with Bullet collision detection
+Capsules stacking with Bullet collision detection
 Moreau TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
 """.format(hstep, theta, Numerics.solver_options_id_to_name(solver),
@@ -67,7 +67,7 @@ with MechanicsHdf5Runner(mode='r+') as io:
     io.run(with_timer=True,
            gravity_scale=1,
            t0=0,
-           T=20,
+           T=20.0,
            h=hstep,
            theta=theta,
            Newton_max_iter=1,
