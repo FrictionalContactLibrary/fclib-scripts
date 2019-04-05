@@ -11,8 +11,7 @@ dump_probability = .02
 itermax = 100000
 NewtonMaxIter = 20
 tolerance = 1e-8
-solver = Numerics.SICONOS_FRICTION_3D_NSGS
-
+solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
 
 # fileName = "KaplasTower"
 # title = "KaplasTower"

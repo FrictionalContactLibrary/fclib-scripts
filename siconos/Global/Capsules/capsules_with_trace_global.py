@@ -15,7 +15,7 @@ import sys
 sys.path.append('../../')
 
 from creation.tools import InputData
-
+from params import *
 
 
 # Creation of the hdf5 file for input/output
@@ -28,12 +28,10 @@ with MechanicsHdf5Runner() as io:
     io.add_Newton_impact_friction_nsl('contact', mu=0.3)
 
 
-hstep = 0.5
 
-itermax = 100
+hstep = h
 dump_probability = .02
-theta = 0.50
-tolerance = 1e-8
+
 import os
 
 base = './Capsules'
@@ -49,10 +47,6 @@ while (not output_dir_created):
         os.mkdir(output_dir)
         output_dir_created = True
 
-
-print(output_dir)
-solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
-#solver=Numerics.SICONOS_FRICTION_3D_NSGS
 fileName = os.path.join(output_dir,'Capsules')
 title = "Capsules"
 description = """
