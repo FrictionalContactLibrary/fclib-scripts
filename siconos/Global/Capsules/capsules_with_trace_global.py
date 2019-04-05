@@ -28,9 +28,9 @@ with MechanicsHdf5Runner() as io:
     io.add_Newton_impact_friction_nsl('contact', mu=0.3)
 
 
-hstep = 0.0005
+hstep = 0.5
 
-itermax = 100000
+itermax = 100
 dump_probability = .02
 theta = 0.50
 tolerance = 1e-8
@@ -49,9 +49,11 @@ while (not output_dir_created):
         os.mkdir(output_dir)
         output_dir_created = True
 
+
+print(output_dir)
 solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
 #solver=Numerics.SICONOS_FRICTION_3D_NSGS
-fileName = "./Capsules/Capsules"
+fileName = os.path.join(output_dir,'Capsules')
 title = "Capsules"
 description = """
 Capsules stacking with Bullet collision detection

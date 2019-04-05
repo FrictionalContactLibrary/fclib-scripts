@@ -49,7 +49,7 @@ while (not output_dir_created):
 
 solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
 #solver=Numerics.SICONOS_FRICTION_3D_NSGS
-fileName = "./KaplasTower/KaplasTower"
+fileName = os.path.join(output_dir,'KaplasTower')
 title = "Kaplas Tower"
 description = """
 Kaplas stacking with Bullet collision detection
@@ -79,7 +79,7 @@ with MechanicsHdf5Runner(mode='r+') as io:
            gravity_scale=1,
            t0=0,
            T=20.0,
-           h=hstep,
+           h=0.5,
            theta=theta,
            Newton_max_iter=NewtonMaxIter,
            set_external_forces=None,
