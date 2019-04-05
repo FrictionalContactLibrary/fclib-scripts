@@ -75,7 +75,7 @@ fileName = "./Box_stacks/Box_Stacks"
 title = "Box_stacks"
 description = """
 Box stacks with Bullet collision detection
-Moreau TimeStepping Global: h={0}, theta = {1}
+Moreau TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
 """.format(hstep, theta, Numerics.solver_options_id_to_name(solver),
            itermax,
@@ -100,6 +100,4 @@ with MechanicsHdf5Runner(mode='r+') as io:
            itermax=itermax,
            tolerance=tolerance,
            output_frequency=1,
-           osi=Kernel.MoreauJeanGOSI,
-           friction_contact_trace=True,
-           friction_contact_trace_params=friction_contact_trace_params)
+           osi=Kernel.MoreauJeanGOSI)

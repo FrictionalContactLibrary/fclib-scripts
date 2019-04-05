@@ -29,7 +29,7 @@ with MechanicsHdf5Runner() as io:
 
 hstep = 0.0005
 
-itermax = 10000
+itermax = 100000
 dump_probability = .02
 theta = 0.50
 tolerance = 1e-8
