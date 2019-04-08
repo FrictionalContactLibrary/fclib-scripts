@@ -19,7 +19,7 @@ with MechanicsHdf5Runner() as io:
 
     k = 0
     sep = 0.01
-    
+
     def make_stack(X, Y, N, M, W):
         global k
         z = height/2.0
@@ -88,7 +88,7 @@ friction_contact_trace_params = FrictionContactTraceParams(
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 
-    
+
 # Load and run the simulation
 with MechanicsHdf5Runner(mode='r+') as io:
     io.run(t0=0,
