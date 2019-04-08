@@ -1,4 +1,4 @@
-
+import random
 import shlex, os
 import numpy as np
 from siconos.mechanics.collision.tools import Contactor
@@ -283,7 +283,8 @@ class InputData():
     def __init__(self,
                  io,
                  shape_filename='ref.txt',
-                 input_filename='input.dat'):
+                 input_filename='input.dat',
+                 random_shape=False):
         self._io=io
         self._input_filename = input_filename
         # self._static_origins = []
@@ -291,11 +292,14 @@ class InputData():
         # self._static_transforms = []
         # self._static_cobjs = []
         self._shape = ShapeCollection(shape_filename)
+        print(self._shape._url)
+        #input()
         # self._static_pos_file = None
         # self._dynamic_pos_file = None
         # self._contact_forces_file = None
         # self._solver_traces_file = None
         # self._io = MechanicsIO()
+        self._random_shape = random_shape
 
         # read data
         with open(self._input_filename, 'r') as input_file:
@@ -309,6 +313,7 @@ class InputData():
                     sline = shlex.split(line)
                     if len(sline) > 3:
                         shape_id = int(sline[0])
+                       
                         group_id = int(sline[1])
                         mass = float(sline[2])
 
@@ -355,7 +360,15 @@ class InputData():
                         else:
                             # a moving object
 
-
+                            if self._random_shape :
+                                number_of_ref = len(self._shape._url)
+                                new_id = random.randint(0,number_of_ref-1)
+                                if (new_id == 1) or (new_id == 2):
+                                    pass
+                                else:
+                                    shape_id=new_id
+                                pass
+                            
                             # add shape 
                             name = self._shape.create_shape(self._io, shape_id)
 
