@@ -3,6 +3,7 @@
 from siconos.io.mechanics_run import MechanicsHdf5Runner
 import siconos.numerics as Numerics
 import siconos.kernel as Kernel
+from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
 
 import chute
 import rocas
@@ -10,15 +11,11 @@ import random
 
 random.seed(0)
 
-unscaled_cube_size = 0.1
-unscaled_plan_thickness = unscaled_cube_size
-unscaled_density = 2500
+cube_size = 0.1
+plan_thickness = cube_size
+density = 2500
 
-scale = 1.0/unscaled_cube_size*10.0
-
-cube_size = unscaled_cube_size*scale
-plane_thickness = unscaled_plan_thickness*scale
-density =  unscaled_density/(scale**3)
+#print('density',density)
 
 box_height = 3.683
 box_length = 6.900
@@ -35,24 +32,28 @@ with MechanicsHdf5Runner(mode='w') as io:
 
     rcs = rocas.create_rocas(io, n_layer=200, n_row=2, n_col=16,
                              x_shift=2.0, roca_size=0.1, top=3,
-                             rate=0.02, density=density)
+                             rate=0.2, density=density)
 
     io.add_Newton_impact_friction_nsl('contact', mu=1.0, e=0.01)
 
-step=20000
-hstep=1e-4
-itermax=10000
-dump_probability = .02
-theta=1.0
-tolerance=1e-03
+from params import *
+
 import os 
-from os import path
-if not os.path.exists('Chute'):
-    os.mkdir('Chute')
+base = './Chute'
+cmp=0
+output_dir_created = False
+output_dir = base +'_0'
+while (not output_dir_created):
+    print('output_dir', output_dir)
+    if (os.path.exists(output_dir)):
+        cmp =cmp+1
+        output_dir = base +  '_' + str(cmp)
+    else:
+        os.mkdir(output_dir)
+        output_dir_created = True
 
 
-solver=Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
-fileName = "./Chute/Chute"
+fileName = os.path.join(output_dir,'Chute')
 title = "Chute"
 description = """
 Chute with 6400 polyhedra with Bullet collision detection
@@ -63,27 +64,27 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
            tolerance)
 mathInfo = ""
 
-from siconos.io.FrictionContactTrace import FrictionContactTraceParams
-friction_contact_trace_params = FrictionContactTraceParams(dump_itermax=9000, dump_probability=None,
-                                                           fileName=fileName, title =title,
-                                                           description = description, mathInfo= mathInfo)
-
-    
+friction_contact_trace_params = GlobalFrictionContactTraceParams(
+    dump_itermax=1, dump_probability=None,
+    fileName=fileName, title=title,
+    description=description, mathInfo=mathInfo)
+#input()
 with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
     # By default earth gravity is applied and the units are those
     # of the International System of Units.
     # Because of fixed collision margins used in the collision detection,
     # sizes of small objects may need to be expressed in cm or mm.
-    io.run(gravity_scale=1.0/scale,
-           t0=0,
-           T=step*hstep,
+    io.run(gravity_scale=1.0,
+           t0=t0,
+           T=T,
            h=hstep,
-           multipoints_iterations=True,
-           theta=1.0,
-           Newton_max_iter=1,
-           solver=Numerics.SICONOS_FRICTION_3D_NSGS,
-           itermax=10000,
-           tolerance=1e-3,
+           multipoints_iterations=multipointIterations,
+           theta=theta,
+           Newton_max_iter=NewtonMaxIter,
+           solver=solver,
+           itermax=itermax,
+           tolerance=tolerance,
+           numerics_verbose=False,
            output_frequency=10,
            osi=Kernel.MoreauJeanGOSI,
            friction_contact_trace=True,

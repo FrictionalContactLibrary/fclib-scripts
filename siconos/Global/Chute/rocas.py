@@ -27,28 +27,32 @@ def una_roca(io, name, cname, roca_size=0.05, density=1, trans=None, tob=None):
 
     scale = roca_size / max(numpy.array(vertices).max(axis=0)
                             - numpy.array(vertices).min(axis=0))
-
+    #print('scale',scale)
+    
     ch = ConvexHull(vertices)
     cm = ch.centroid()
 
     # correction of vertices such that 0 is the centroid
     vertices = (numpy.array(vertices)[:] - cm[:]) * scale
-
+    
+    #print('vertices',vertices)
     ch = ConvexHull(vertices)
     cm = ch.centroid()
 
+    
     # Definition of a polyhedron as a convex shape
     io.add_convex_shape(cname, vertices, insideMargin=0.1*roca_size)
 
     # computation of inertia and volume
     inertia,volume=ch.inertia(ch.centroid())
 
-    # print('geometric inertia:', inertia)
-    # print('volume:', volume)
-    # print('mass:', volume*density)
-    # print('inertia:', inertia*density)
+    #print('geometric inertia:', inertia)
+    #print('volume:', volume)
+    #print('density:', density)
+    #print('mass:', volume*density)
+    #print('inertia:', inertia*density)
 
-
+    #input()
     io.add_object(name,
                  [Contactor(cname)],
                  translation=trans,
@@ -101,7 +105,7 @@ def create_rocas(io, n_layer=5, n_row=5, n_col=5, x_shift=3.0,
                  roca_size=0.05, top=0, rate=0.01, density=1,
                  distribution = ('uniform', 0.1)):
 
-    N = n_layer*n_row*n_col
+    N = n_layer*n_row*n_col+1
 
     dist, rng = distribution
 
