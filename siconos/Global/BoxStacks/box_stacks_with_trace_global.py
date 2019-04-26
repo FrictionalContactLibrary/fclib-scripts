@@ -67,11 +67,20 @@ itermax = 1000
 dump_probability = .02
 theta = 0.50
 tolerance = 1e-12
+base = './BoxStacks'
+cmp=0
+output_dir_created = False
+output_dir = base +'_0'
+while (not output_dir_created):
+    print('output_dir', output_dir)
+    if (os.path.exists(output_dir)):
+        cmp =cmp+1
+        output_dir = base +  '_' + str(cmp)
+    else:
+        os.mkdir(output_dir)
+        output_dir_created = True
 
-if not os.path.exists('box_stacks'):
-    os.mkdir('box_stacks')
-
-fileName = "./Box_stacks/Box_Stacks"
+fileName = os.path.join(output_dir,'BoxStacks')
 title = "Box_stacks"
 description = """
 Box stacks with Bullet collision detection
