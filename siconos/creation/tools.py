@@ -283,8 +283,7 @@ class InputData():
     def __init__(self,
                  io,
                  shape_filename='ref.txt',
-                 input_filename='input.dat',
-                 random_shape=False):
+                 input_filename='input.dat'):
         self._io=io
         self._input_filename = input_filename
         # self._static_origins = []
@@ -299,8 +298,6 @@ class InputData():
         # self._contact_forces_file = None
         # self._solver_traces_file = None
         # self._io = MechanicsIO()
-        self._random_shape = random_shape
-
         # read data
         with open(self._input_filename, 'r') as input_file:
 
@@ -359,15 +356,6 @@ class InputData():
 
                         else:
                             # a moving object
-
-                            if self._random_shape :
-                                number_of_ref = len(self._shape._url)
-                                new_id = random.randint(0,number_of_ref-1)
-                                if (new_id == 1) or (new_id == 2):
-                                    pass
-                                else:
-                                    shape_id=new_id
-                                pass
                             
                             # add shape 
                             name = self._shape.create_shape(self._io, shape_id)
