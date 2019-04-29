@@ -27,9 +27,9 @@ mass = 1
 with open('input.dat','w') as f:
     #    f.write('0 0 10 50 0 20 1 0 0 0 -100. 0 0 10 10 10\n')
     f.write('1 -1 0 0  0 -.5 1 0 0 0 0    0 0 0 0 0\n')
-    for k in range(0,12):
+    for k in range(0,200):
 
-        for i in range(0,200):
+        for i in range(0,12):
 
             theta = (i+3 + (k%2) * 0.5) * pi / 6
             a = 0
