@@ -11,8 +11,9 @@ dump_probability = .05
 itermax = 100
 NewtonMaxIter = 20
 tolerance = 1e-8
-solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM_WR
+#solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM_WR
 #solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_NSGS_WR
+solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
 multipointIterations = False
 
 # fileName = "Spheres"

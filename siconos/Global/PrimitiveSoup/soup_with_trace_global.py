@@ -5,7 +5,7 @@
 #
 
 from siconos.mechanics.collision.tools import Contactor
-from siconos.io.mechanics_run import MechanicsHdf5Runner
+from mechanics_run import MechanicsHdf5Runner
 import siconos.numerics as Numerics
 import siconos.kernel as Kernel
 from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
@@ -21,14 +21,11 @@ from params import *
 # Creation of the hdf5 file for input/output
 with MechanicsHdf5Runner() as io:
 
-    input_data= InputData(io, random_shape = True )
+    input_data= InputData(io)
     
     # Definition of a non smooth law. As no group ids are specified it
     # is between contactors of group id 0.
     io.add_Newton_impact_friction_nsl('contact', mu=mu)
-
-
-dump_probability = .02
 
 
 import os
@@ -59,13 +56,15 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=1, dump_probability=None,
+    dump_itermax=dump_itermax, dump_probability=dump_probability,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 
 # Run the simulation from the inputs previously defined and add
 # results to the hdf5 file. The visualisation of the output may be done
 # with the vview command.
+
+#T = 417*h
 with MechanicsHdf5Runner(mode='r+') as io:
 
     # By default earth gravity is applied and the units are those
@@ -75,7 +74,7 @@ with MechanicsHdf5Runner(mode='r+') as io:
     io.run(with_timer=True,
            gravity_scale=1,
            t0=0,
-           T=10.0,
+           T=T,
            h=h,
            theta=theta,
            Newton_max_iter=NewtonMaxIter,
@@ -84,8 +83,8 @@ with MechanicsHdf5Runner(mode='r+') as io:
            multipoints_iterations=False,
            itermax=itermax,
            tolerance=tolerance,
-           numerics_verbose=True,
-           output_frequency=10,
+           numerics_verbose=False,
+           output_frequency=100,
            osi=Kernel.MoreauJeanGOSI,
            friction_contact_trace=True,
            friction_contact_trace_params=friction_contact_trace_params,
