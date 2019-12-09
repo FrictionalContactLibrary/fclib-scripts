@@ -65,7 +65,7 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=1, dump_probability=None,
+    dump_itermax=1, dump_probability=dump_probability,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 #input()
