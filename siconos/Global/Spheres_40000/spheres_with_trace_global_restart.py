@@ -18,19 +18,6 @@ from creation.tools import InputData
 
 from params import *
 
-# Creation of the hdf5 file for input/output
-with MechanicsHdf5Runner() as io:
-
-    input_data= InputData(io)
-    
-    # Definition of a non smooth law. As no group ids are specified it
-    # is between contactors of group id 0.
-    io.add_Newton_impact_friction_nsl('contact', mu=mu)
-
-
-dump_probability = .05
-
-
 import os
 
 base = './Spheres'
@@ -59,7 +46,7 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=1, dump_probability=dump_probability,
+    dump_itermax=dump_itermax, dump_probability=dump_probability,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 
