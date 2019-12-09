@@ -45,9 +45,9 @@ with open('input.dat', 'w') as f:
 
             f.write('2 -2 1 {0} {1} 0 0 0 0 0 0\n'.format(s_v(q),s_v(o)))
 
-    for x in range(0,20):
-        for y in range(0,20):
-            for i in range(0,100):
+    for x in range(0,10):
+        for y in range(0,10):
+            for i in range(0,20):
 
                 theta = 0
                 a = 0
