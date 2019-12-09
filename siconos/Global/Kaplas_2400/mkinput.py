@@ -42,7 +42,7 @@ with open('input.dat','w') as f:
 
             r.normalize()
 
-            q = (23.48*cos(alpha*(i + (k%2)* 0.5)), 23.48*sin(alpha*(i + (k%2)* 0.5)), (2.348 + 1.) * k + 2.360 /2. + 2)
+            q = (23.48*cos(alpha*(i + (k%2)* 0.5)), 23.48*sin(alpha*(i + (k%2)* 0.5)), (2.348 + 0.01) * k + 2.360/2. + 0.01)
             o = (r.w(), r.x(), r.y(), r.z())
 
             f.write('2 0 {0} {1} {2} 0 0 0 0 0 0\n'.format(mass, s_v(q),s_v(o)))
