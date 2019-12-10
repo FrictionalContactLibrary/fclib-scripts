@@ -73,17 +73,17 @@ def attributes_split(filename):
     attributes=filename.split('-')
     print(attributes)
     id = int(attributes[-1].split('.')[0])
-    print(id)
+    print('id', id)
     size = int(attributes[-2])
-    print(size)
-    iteration = int(attributes[-3][1:])
-    print(iteration)
-    return id, size, iteration
+    print('size',size)
+    #iteration = int(attributes[-3][1:])
+    #print(iteration)
+    return id, size #, iteration
 
 
 for filename in glob(os.path.join(hdf5_dir+'/*.hdf5')):
     print(filename)
-    id, size, iteration = attributes_split(filename)
+    id, size = attributes_split(filename)
     max_size=max(size,max_size)
     print("max_size", max_size)
 
@@ -101,10 +101,10 @@ for i in range(n_packets+1):
     
 for filename in  glob(os.path.join(hdf5_dir+'/*.hdf5')):
     #print( filename)
-    id, size, iteration = attributes_split(filename)
+    id, size = attributes_split(filename)
     print('size/dnp',size/dnp, int(size/dnp))
     #input()
-    list_filename[int(size/dnp)-1].append((iteration,filename))
+    list_filename[int(size/dnp)-1].append((size,filename))
 
 for i in range(n_packets):
     print('len(list_filename[',i,'])',len(list_filename[i]))
