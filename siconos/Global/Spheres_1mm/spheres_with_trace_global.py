@@ -28,7 +28,7 @@ with MechanicsHdf5Runner() as io:
     io.add_Newton_impact_friction_nsl('contact', mu=mu)
 
 
-dump_probability = .02
+dump_probability = .05
 
 
 import os
@@ -46,8 +46,8 @@ while (not output_dir_created):
         os.mkdir(output_dir)
         output_dir_created = True
 
-fileName = os.path.join(output_dir,'Spheres')
-title = "Spheres Tower"
+fileName = os.path.join(output_dir,'Spheres1mm')
+title = "1 mm Spheres Tower"
 description = """
 Spheres stacking with Bullet collision detection
 Moreau TimeStepping Global: h={0}, theta = {1}
@@ -59,7 +59,7 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=1, dump_probability=None,
+    dump_itermax=1, dump_probability=dump_probability,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 

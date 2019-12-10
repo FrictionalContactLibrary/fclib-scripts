@@ -68,7 +68,7 @@ with open('input.dat', 'w') as f:
     print('inertia', inertia)
     for x in range(0,10):
         for y in range(0,10):
-            for i in range(0,2):
+            for i in range(0,20):
 
                 theta = 0
                 a = 0
