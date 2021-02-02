@@ -2,7 +2,7 @@ import os
 import shutil as shutil
 from glob import glob 
 base = './Chute_selected'
-source_dir='./Chute/'
+source_dir='./Chute_0/'
 os.mkdir(base)
 counter =0
 max_size = 0
@@ -14,7 +14,7 @@ def attributes_split(filename):
     print('id:',id)
     size = int(attributes[-2])
     print('size:',size)
-    iteration = int(attributes[-3][1:])
+    iteration = int(attributes[-2][1:])
     print('iteration:', iteration)
     return id, size, iteration
 

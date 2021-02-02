@@ -7,7 +7,7 @@ import chute
 import rocas
 import random
 import os
-from siconos.io.FrictionContactTrace import FrictionContactTraceParams
+from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
 
 random.seed(0)
 
@@ -27,12 +27,12 @@ box_width = 3.430
 
 plane_thickness = 0.2
 
-test = False
+test = True
 if test:
-    n_layer = 2
-    n_row = 2
-    n_col = 2
-    step = 200
+    n_layer = 20
+    n_row = 4
+    n_col = 4
+    step = 20000
     hstep = 1e-3
     itermax=1000
 else:
@@ -41,7 +41,7 @@ else:
     n_col = 16
     step = 20000
     hstep = 1e-4
-    itermax=2000
+    itermax=20000
 
 # Create solver options
 with MechanicsHdf5Runner(mode='w') as io:
@@ -79,22 +79,40 @@ while (not output_dir_created):
 
 fileName = os.path.join(output_dir,'Chute')
 
-options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_ADMM)
+options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_NSGS_WR)
 options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
 options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
-fileName = "./Chute/Chute"
+
+# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_IPM)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 1000
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
+
+# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_ADMM)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 1000
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+# options.iparam[sn.SICONOS_FRICTION_3D_ADMM_IPARAM_SYMMETRY] =  sn.SICONOS_FRICTION_3D_ADMM_SYMMETRIZE
+# #options.iparam[sn.SICONOS_FRICTION_3D_IPARAM_RESCALING]=sn.SICONOS_FRICTION_3D_RESCALING_BALANCING_M
+
+# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_VI_EG)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 10000
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
+
 title = "Chute"
 description = """
 Chute with 6400 polyhedra with Bullet collision detection
 Moreau TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
-""".format(hstep, theta, sk.solver_options_id_to_name(options.solverId),
+""".format(hstep,
+           theta,
+           sk.solver_options_id_to_name(options.solverId),
            itermax,
            tolerance)
 mathInfo = ""
 
-friction_contact_trace_params = FrictionContactTraceParams(
-    dump_itermax=2000, dump_probability=None,
+friction_contact_trace_params = GlobalFrictionContactTraceParams(
+    dump_itermax=100, dump_probability=None,
     fileName=fileName, title=title, description=description,
     mathInfo=mathInfo)
 
@@ -113,7 +131,10 @@ with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
                Newton_max_iter=1,
                output_frequency=10,
                osi=sk.MoreauJeanGOSI,
-               solver_options=options)
+               # numerics_verbose=True,
+               # numerics_verbose_level=1,
+               solver_options=options,
+               friction_contact_trace_params=friction_contact_trace_params)
     else:
         io.run(gravity_scale=1.0 / scale,
                t0=0,
@@ -125,4 +146,5 @@ with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
                output_frequency=10,
                osi=sk.MoreauJeanGOSI,
                solver_options=options,
+               numerics_verbose=1,
                friction_contact_trace_params=friction_contact_trace_params)
