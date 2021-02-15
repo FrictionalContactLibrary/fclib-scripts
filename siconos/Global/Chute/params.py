@@ -1,5 +1,5 @@
-import siconos.numerics as Numerics
-
+import siconos.numerics as sn
+import siconos.kernel as sk
 t0 = 0
 T=10
 hstep = 1e-4
@@ -10,21 +10,32 @@ theta = 1.0
 dump_itermax = 10
 dump_probability = .05
 
-itermax = 10000
+itermax = 100
 NewtonMaxIter = 1
 tolerance = 1e-3
-solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
-#solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_NSGS_WR
+
+
+
+# solver_id= sn.SICONOS_GLOBAL_FRICTION_3D_NSGS_WR
+# options = sk.solver_options_create(solver_id)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
+#solver_id =sn.SICONOS_GLOBAL_FRICTION_3D_IPM
+# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_IPM)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 1000
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
+solver_id =sn.SICONOS_GLOBAL_FRICTION_3D_ADMM
+options = sk.solver_options_create(solver_id)
+options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
+options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+# options.iparam[sn.SICONOS_FRICTION_3D_ADMM_IPARAM_SYMMETRY] =  sn.SICONOS_FRICTION_3D_ADMM_SYMMETRIZE
+# #options.iparam[sn.SICONOS_FRICTION_3D_IPARAM_RESCALING]=sn.SICONOS_FRICTION_3D_RESCALING_BALANCING_M
+
+#solver_id= sn.SICONOS_GLOBAL_FRICTION_3D_VI_EG
+# options = sk.solver_options_create(solve_id)
+# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 10000
+# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
 multipointIterations = True
-
-# fileName = "Spheres"
-# title = "Spheres"
-# description = """
-# Spheres falling on the ground with Bullet collision detection
-# Moreau TimeStepping: h={0}, theta = {1}
-# One Step non smooth problem: {2}, maxiter={3}, tol={4}
-# """.format(h, theta, Numerics.idToName(solver),
-#            itermax,
-#            tolerance)
-
-# mathInfo = ""

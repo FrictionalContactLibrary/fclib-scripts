@@ -1,49 +1,48 @@
-
-from siconos.io.mechanics_run import MechanicsHdf5Runner
+#!/usr/bin/env python
 import siconos.numerics as sn
 import siconos.kernel as sk
+from siconos.io.mechanics_run import MechanicsHdf5Runner
+
+from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
 
 import chute
 import rocas
 import random
-import os
-from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
 
 random.seed(0)
 
-unscaled_cube_size = 0.1
-unscaled_plan_thickness = unscaled_cube_size
-unscaled_density = 2500
+cube_size = 0.1
+plan_thickness = cube_size
+density = 2500
 
-scale = 1.0 / unscaled_cube_size * 10.0
-
-cube_size = unscaled_cube_size * scale
-plane_thickness = unscaled_plan_thickness * scale
-density = unscaled_density / (scale ** 3)
+#print('density',density)
 
 box_height = 3.683
 box_length = 6.900
-box_width = 3.430
+box_width  = 3.430
 
 plane_thickness = 0.2
+
+
+from params import *
+
 
 test = True
 if test:
     n_layer = 20
     n_row = 4
     n_col = 4
-    step = 20000
+    step = 100
     hstep = 1e-3
-    itermax=1000
+    itermax=100
+    options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
+    options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
 else:
     n_layer = 200
     n_row = 2
     n_col = 16
-    step = 20000
-    hstep = 1e-4
-    itermax=20000
 
-# Create solver options
+
 with MechanicsHdf5Runner(mode='w') as io:
     ch = chute.create_chute(io, box_height=box_height,
                             box_length=box_length,
@@ -58,12 +57,7 @@ with MechanicsHdf5Runner(mode='w') as io:
     io.add_Newton_impact_friction_nsl('contact', mu=1.0, e=0.01)
 
 
-dump_probability = .02
-theta = 1.0
-tolerance = 1e-03
-
-from params import *
-import os
+import os 
 base = './Chute'
 cmp=0
 output_dir_created = False
@@ -77,28 +71,13 @@ while (not output_dir_created):
         os.mkdir(output_dir)
         output_dir_created = True
 
+
 fileName = os.path.join(output_dir,'Chute')
 
-options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_NSGS_WR)
-options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
-options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
 
-# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_IPM)
-# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 1000
-# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
-
-
-# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_ADMM)
-# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 1000
-# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
-# options.iparam[sn.SICONOS_FRICTION_3D_ADMM_IPARAM_SYMMETRY] =  sn.SICONOS_FRICTION_3D_ADMM_SYMMETRIZE
-# #options.iparam[sn.SICONOS_FRICTION_3D_IPARAM_RESCALING]=sn.SICONOS_FRICTION_3D_RESCALING_BALANCING_M
-
-# options = sk.solver_options_create(sn.SICONOS_GLOBAL_FRICTION_3D_VI_EG)
-# options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = 10000
-# options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
-
-
+print('itermax', itermax)
+sn.numerics_set_verbose(2)
+sk.solver_options_print(options)
 title = "Chute"
 description = """
 Chute with 6400 polyhedra with Bullet collision detection
@@ -106,23 +85,22 @@ Moreau TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
 """.format(hstep,
            theta,
-           sk.solver_options_id_to_name(options.solverId),
+           sk.solver_options_id_to_name(solver_id),
            itermax,
            tolerance)
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=100, dump_probability=None,
-    fileName=fileName, title=title, description=description,
-    mathInfo=mathInfo)
-
+    dump_itermax=1, dump_probability=None,
+    fileName=fileName, title=title,
+    description=description, mathInfo=mathInfo)
 with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
     # By default earth gravity is applied and the units are those
     # of the International System of Units.
     # Because of fixed collision margins used in the collision detection,
     # sizes of small objects may need to be expressed in cm or mm.
     if test:
-        io.run(gravity_scale=1.0 / scale,
+        io.run(gravity_scale=1.0,
                t0=0,
                T=step * hstep,
                h=hstep,
@@ -131,12 +109,10 @@ with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
                Newton_max_iter=1,
                output_frequency=10,
                osi=sk.MoreauJeanGOSI,
-               # numerics_verbose=True,
-               # numerics_verbose_level=1,
                solver_options=options,
                friction_contact_trace_params=friction_contact_trace_params)
     else:
-        io.run(gravity_scale=1.0 / scale,
+        io.run(gravity_scale=1.0,
                t0=0,
                T=step * hstep,
                h=hstep,
