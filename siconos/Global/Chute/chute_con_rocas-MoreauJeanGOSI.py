@@ -27,7 +27,7 @@ plane_thickness = 0.2
 from params import *
 
 
-test = True
+test = False
 if test:
     n_layer = 20
     n_row = 4
@@ -38,8 +38,8 @@ if test:
     options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
     options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
 else:
-    n_layer = 200
-    n_row = 2
+    n_layer = 100
+    n_row = 4
     n_col = 16
 
 
@@ -50,9 +50,13 @@ with MechanicsHdf5Runner(mode='w') as io:
                             plane_thickness=plane_thickness,
                             scale=1, trans=[-0.6, -1.8, -1])
 
+    # The time of death is driven by the rate value.
+    # For a layer, number n, the time of birth is given by n*rate+random.random()*rate*2/5
+    # The travel time for a grain is 0.5*9.81*(rate)**2
+    
     rcs = rocas.create_rocas(io, n_layer=n_layer, n_row=n_row, n_col=n_col,
                              x_shift=2.0, roca_size=0.1, top=3,
-                             rate=0.02, density=density)
+                             rate=0.25, density=density)
 
     io.add_Newton_impact_friction_nsl('contact', mu=1.0, e=0.01)
 
@@ -122,5 +126,5 @@ with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
                output_frequency=10,
                osi=sk.MoreauJeanGOSI,
                solver_options=options,
-               numerics_verbose=1,
+               numerics_verbose=True,
                friction_contact_trace_params=friction_contact_trace_params)

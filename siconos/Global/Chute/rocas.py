@@ -148,5 +148,5 @@ def create_rocas(io, n_layer=5, n_row=5, n_col=5, x_shift=3.0,
                 name = 'rock'+str(n)+'_'+str(i)+'_'+str(j)
                 cname = 'RockCS'+str(n)+'_'+str(i)+'_'+str(j)
                 una_roca(io, name, cname, sizes[k], density, trans,
-                         tob = n*rate + random.random()*rate)
+                         tob = n*rate + random.random()*rate*2/5.)
                 k += 1

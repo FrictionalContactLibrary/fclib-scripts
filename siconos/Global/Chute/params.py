@@ -1,8 +1,9 @@
 import siconos.numerics as sn
 import siconos.kernel as sk
 t0 = 0
-T=10
 hstep = 1e-4
+step=10e5
+T=step*hstep
 g = 9.81
 theta = 1.0
 
