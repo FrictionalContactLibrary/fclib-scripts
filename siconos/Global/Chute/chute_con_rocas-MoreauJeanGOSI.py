@@ -95,7 +95,7 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=1, dump_probability=None,
+    dump_itermax=dump_itermax, dump_probability=dump_probability,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 with MechanicsHdf5Runner(mode='r+', collision_margin=0.01) as io:
