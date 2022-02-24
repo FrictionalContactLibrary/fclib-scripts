@@ -6,12 +6,13 @@
 
 from siconos.mechanics.collision.tools import Contactor
 from siconos.io.mechanics_run import MechanicsHdf5Runner
-import siconos.numerics as Numerics
+import siconos.numerics as sn
+import siconos.kernel as sk
 from siconos.io.FrictionContactTrace import FrictionContactTraceParams
 
 
 import sys
-sys.path.append('../')
+sys.path.append('../../')
 
 from creation.tools import InputData
 
@@ -37,14 +38,25 @@ import os
 if not os.path.exists('./Capsules/'):
     os.mkdir('./Capsules/')
     
-solver=Numerics.SICONOS_FRICTION_3D_NSGS
+#solver=Numerics.SICONOS_FRICTION_3D_NSGS
+
+solver_id = sn.SICONOS_FRICTION_3D_NSGS
+options = sk.solver_options_create(solver_id)
+options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
+options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
+
+
+
+
+
 fileName = "./Capsules/Capsules"
 title = "Capsules"
 description = """
 Capsules stacking with Bullet collision detection
 Moreau TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
-""".format(hstep, theta, Numerics.solver_options_id_to_name(solver),
+""".format(hstep, theta, sn.solver_options_id_to_name(solver_id),
            itermax,
            tolerance)
 
@@ -72,10 +84,8 @@ with MechanicsHdf5Runner(mode='r+') as io:
            theta=theta,
            Newton_max_iter=1,
            set_external_forces=None,
-           solver=Numerics.SICONOS_FRICTION_3D_NSGS,
-           itermax=itermax,
-           tolerance=tolerance,
+           solver_options=options,
            numerics_verbose=False,
            output_frequency=None,
-           friction_contact_trace=True,
            friction_contact_trace_params=friction_contact_trace_params)
+
