@@ -49,7 +49,8 @@ description = """
 PrimitiveSoup stacking with Bullet collision detection
 Moreau TimeStepping Global: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
-""".format(h, theta, Numerics.solver_options_id_to_name(solver),
+""".format(h, theta,
+           Numerics.solver_options_id_to_name(solver_id),
            itermax,
            tolerance)
 
@@ -71,21 +72,17 @@ with MechanicsHdf5Runner(mode='r+') as io:
     # of the International System of Units.
     # Because of fixed collision margins used in the collision detection,
     # sizes of small objects may need to be expressed in cm or mm.
-    io.run(with_timer=True,
+    io.run(with_timer=False,
            gravity_scale=1,
            t0=0,
            T=T,
            h=h,
            theta=theta,
            Newton_max_iter=NewtonMaxIter,
-           set_external_forces=None,
-           solver=solver,
-           multipoints_iterations=False,
-           itermax=itermax,
-           tolerance=tolerance,
+           solver_options=options,
+           multipoints_iterations=multipointIterations,
            numerics_verbose=False,
            output_frequency=100,
            osi=Kernel.MoreauJeanGOSI,
-           friction_contact_trace=True,
            friction_contact_trace_params=friction_contact_trace_params,
            violation_verbose=True)
