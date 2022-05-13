@@ -116,7 +116,7 @@ if not restart:
 
 
 import os 
-base = './RollingSpheres'
+base = './SpheresPile'
 cmp=0
 output_dir_created = False
 output_dir = base +'_0'
@@ -130,13 +130,13 @@ while (not output_dir_created):
         output_dir_created = True
 
 
-fileName = os.path.join(output_dir,'RollingSpheres')
+fileName = os.path.join(output_dir,'SpheresPile')
 print('itermax', itermax)
 sn.numerics_set_verbose(2)
 sk.solver_options_print(options)
-title = "RollingSpheres"
+title = "SpheresPile"
 description = """
-Siconos spheres_pile_MoreauJeanGOSI.py with 250  with Bullet collision detection
+Siconos spheres_pile_MoreauJeanGOSI.py with 250 with Bullet collision detection
 Global MoreauJean TimeStepping: h={0}, theta = {1}
 One Step non smooth problem: {2}, maxiter={3}, tol={4}
 """.format(hstep,
@@ -147,7 +147,7 @@ One Step non smooth problem: {2}, maxiter={3}, tol={4}
 mathInfo = ""
 
 friction_contact_trace_params = GlobalFrictionContactTraceParams(
-    dump_itermax=300, dump_probability=None,
+    dump_itermax=100, dump_probability=.05,
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 
