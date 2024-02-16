@@ -3,7 +3,8 @@
 import os
 
 from siconos.mechanics.collision.tools import Contactor
-from siconos.io.mechanics_run import MechanicsHdf5Runner
+from siconos.io.mechanics_run import MechanicsHdf5Runner, MechanicsHdf5Runner_run_options
+from siconos.mechanics.collision.bullet import SiconosBulletOptions
 import siconos.numerics as Numerics
 import siconos.kernel as Kernel
 from siconos.io.FrictionContactTrace import FrictionContactTraceParams
@@ -98,17 +99,54 @@ friction_contact_trace_params = FrictionContactTraceParams(
     description=description, mathInfo=mathInfo)
 
 
-# Load and run the simulation
+
+options = Kernel.solver_options_create(Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM)
+options.iparam[Numerics.SICONOS_IPARAM_MAX_ITER] = itermax
+options.dparam[Numerics.SICONOS_DPARAM_TOL] = tolerance
+options.iparam[Numerics.SICONOS_FRICTION_3D_NSGS_FREEZING_CONTACT] = 0
+
+
+
+
+run_options=MechanicsHdf5Runner_run_options()
+run_options['t0']=0
+run_options['T']=step*hstep
+run_options['h']=hstep
+run_options['theta']=theta
+
+run_options['Newton_max_iter'] =1
+run_options['Newton_tolerance'] =1e-10
+
+#run_options['bullet_options']=bullet_options
+run_options['solver_options']=options
+
+run_options['verbose']=True
+#run_options['with_timer']=True
+#run_options['explode_Newton_solve']=True
+#run_options['explode_computeOneStep']=True
+
+#run_options['violation_verbose'] = True
+run_options['output_frequency']=1
+
+run_options['osi']=Kernel.MoreauJeanGOSI
+
+run_options['friction_contact_trace']=True
+run_options['friction_contact_trace_params'] = friction_contact_trace_params
+
+
+# # Load and run the simulation
+# with MechanicsHdf5Runner(mode='r+') as io:
+#     io.run(t0=0,
+#            T=step*hstep,
+#            h=hstep,
+#            theta=theta,
+#            Newton_max_iter=1,
+#            solver=Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM,
+#            itermax=itermax,
+#            tolerance=tolerance,
+#            output_frequency=1,
+#            osi=Kernel.MoreauJeanGOSI,
+#            friction_contact_trace=True,
+#            friction_contact_trace_params=friction_contact_trace_params)
 with MechanicsHdf5Runner(mode='r+') as io:
-    io.run(t0=0,
-           T=step*hstep,
-           h=hstep,
-           theta=theta,
-           Newton_max_iter=1,
-           solver=Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM,
-           itermax=itermax,
-           tolerance=tolerance,
-           output_frequency=1,
-           osi=Kernel.MoreauJeanGOSI,
-           friction_contact_trace=True,
-           friction_contact_trace_params=friction_contact_trace_params)
+     io.run(run_options)

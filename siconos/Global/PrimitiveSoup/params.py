@@ -23,8 +23,6 @@ options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
 options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
 
 
-multipointIterations = False
-
 # fileName = "Spheres"
 # title = "Spheres"
 # description = """

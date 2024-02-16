@@ -5,7 +5,8 @@
 #
 
 from siconos.mechanics.collision.tools import Contactor
-from siconos.io.mechanics_run import MechanicsHdf5Runner
+from siconos.io.mechanics_run import MechanicsHdf5Runner, MechanicsHdf5Runner_run_options
+from siconos.mechanics.collision.bullet import SiconosBulletOptions
 import siconos.numerics as Numerics
 import siconos.kernel as Kernel
 from siconos.io.FrictionContactTrace import GlobalFrictionContactTraceParams
@@ -64,6 +65,39 @@ friction_contact_trace_params = GlobalFrictionContactTraceParams(
     fileName=fileName, title=title,
     description=description, mathInfo=mathInfo)
 
+options = Kernel.solver_options_create(solver)
+options.iparam[Numerics.SICONOS_IPARAM_MAX_ITER] = itermax
+options.dparam[Numerics.SICONOS_DPARAM_TOL] = tolerance
+
+run_options=MechanicsHdf5Runner_run_options()
+run_options['t0']=0
+run_options['T']=T
+run_options['h']=h
+run_options['theta']=theta
+
+run_options['Newton_max_iter'] =20
+run_options['Newton_tolerance'] =1e-10
+
+#run_options['bullet_options']=bullet_options
+run_options['solver_options']=options
+
+run_options['verbose']=True
+#run_options['with_timer']=True
+#run_options['explode_Newton_solve']=True
+#run_options['explode_computeOneStep']=True
+
+#run_options['violation_verbose'] = True
+run_options['output_frequency']=100
+
+run_options['osi']=Kernel.MoreauJeanGOSI
+
+run_options['friction_contact_trace']=True
+run_options['friction_contact_trace_params'] = friction_contact_trace_params
+
+
+
+
+
 # Run the simulation from the inputs previously defined and add
 # results to the hdf5 file. The visualisation of the output may be done
 # with the vview command.
@@ -73,19 +107,20 @@ with MechanicsHdf5Runner(mode='r+') as io:
     # of the International System of Units.
     # Because of fixed collision margins used in the collision detection,
     # sizes of small objects may need to be expressed in cm or mm.
-    io.run(with_timer=True,
-           gravity_scale=1,
-           t0=0,
-           T=20.0,
-           h=hstep,
-           theta=theta,
-           Newton_max_iter=NewtonMaxIter,
-           set_external_forces=None,
-           solver=solver,
-           itermax=itermax,
-           tolerance=tolerance,
-           numerics_verbose=True,
-           output_frequency=None,
-           osi=Kernel.MoreauJeanGOSI,
-           friction_contact_trace=True,
-           friction_contact_trace_params=friction_contact_trace_params)
+    # io.run(with_timer=True,
+    #        gravity_scale=1,
+    #        t0=0,
+    #        T=20.0,
+    #        h=hstep,
+    #        theta=theta,
+    #        Newton_max_iter=NewtonMaxIter,
+    #        set_external_forces=None,
+    #        solver=solver,
+    #        itermax=itermax,
+    #        tolerance=tolerance,
+    #        numerics_verbose=True,
+    #        output_frequency=None,
+    #        osi=Kernel.MoreauJeanGOSI,
+    #        friction_contact_trace=True,
+    #        friction_contact_trace_params=friction_contact_trace_params)
+    io.run(run_options)
