@@ -1,4 +1,5 @@
-import siconos.numerics as Numerics
+import siconos.numerics as sn
+import siconos.kernel as sk
 
 t0 = 0
 T = 30
@@ -12,7 +13,11 @@ itermax = 100000
 NewtonMaxIter = 20
 tolerance = 1e-8
 
-solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
+solver = sn.SICONOS_GLOBAL_FRICTION_3D_ADMM
+options = sk.solver_options_create(solver)
+options.iparam[sn.SICONOS_IPARAM_MAX_ITER] = itermax
+options.dparam[sn.SICONOS_DPARAM_TOL] = tolerance
+
 
 # fileName = "Capsules"
 # title = "Capsules"
