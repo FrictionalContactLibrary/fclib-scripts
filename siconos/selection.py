@@ -61,9 +61,17 @@ def select_randomly_in_packet(list_filename,  n):
         files_by_size[f[0]].append(f)
 
     print('files_by_size', files_by_size)
-    print("randomly select", n , "sizes in list_sizes of len ", len(list(sizes)) )
+
+
+    n_max =  min(n,len(list(sizes)))
+
+
+    print("randomly select", n_max , "sizes in list_sizes of len ", len(list(sizes)) )
+
+
     
-    selected_sizes=random.sample(list(sizes), n )
+    
+    selected_sizes=random.sample(list(sizes), n_max )
     print('selected_sizes', selected_sizes, len(selected_sizes))
 
     selected_filename = []
@@ -81,19 +89,20 @@ def select_randomly_in_packet(list_filename,  n):
 
 
 
-
-    
-
-
+# compute max size (max number of contact)
 for filename in glob(source_dir+'*.hdf5'):
     print( filename)
     id, size, ndof = attributes_split(filename)
     max_size=max(size,max_size)
     print("max_size:", max_size)
 
-
-n_packets=10
-n_files =20
+# compute packets of sizes
+# Classify files w.r.t to the size in packet
+# this is done by computing the ratio between size and dnp
+# and taking the int floor value
+    
+n_packets=4
+n_files =50
 dnp = max_size/n_packets
 print("dnp",dnp)
 
@@ -101,19 +110,13 @@ list_filename= []
 for i in range(n_packets):
     list_filename.append([])
 
-
-# Classify files w.r.t to the size in packet
-# this is done by computing the ratio between size and dnp
-# and taking the int floor value
 for filename in glob(source_dir+'*.hdf5'):
     #print( filename)
     id, size, ndof = attributes_split(filename)
     print('in packet number size/dnp-1',int((size)/dnp)-1)
     list_filename[int((size)/dnp)-1].append((size,filename))
-
-
     
-# select the files in each packets by keeping the largest one
+# select the files in each packets by keeping the largest one or randomly selected in packets
 for i in range(n_packets):
     # selection in packet
     #list_filename[i] = select_the_largest_ones_in_packet(list_filename[i],  n_files)
