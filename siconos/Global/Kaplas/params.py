@@ -8,8 +8,8 @@ theta = 0.50001
 mu = 0.3
 dump_itermax = 80
 dump_probability = .02
-itermax = 100000
-NewtonMaxIter = 20
+itermax = 1000
+NewtonMaxIter = 1
 tolerance = 1e-8
 solver = Numerics.SICONOS_GLOBAL_FRICTION_3D_ADMM
 
