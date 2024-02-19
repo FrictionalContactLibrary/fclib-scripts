@@ -3,6 +3,10 @@ import shutil as shutil
 from glob import glob 
 base = './PrimitiveSoup_selected'
 source_dir='./PrimitiveSoup_0/'
+base = './Capsules_selected'
+source_dir='./Capsules_0/'
+#base = './Chute_selected'
+#source_dir='./Chute_0/'
 os.mkdir(base)
 counter =0
 max_size = 0
@@ -60,7 +64,7 @@ def select_randomly_in_packet(list_filename,  n):
     for f in list_filename:
         files_by_size[f[0]].append(f)
 
-    print('files_by_size', files_by_size)
+    #print('files_by_size', files_by_size)
 
 
     n_max =  min(n,len(list(sizes)))
@@ -101,8 +105,8 @@ for filename in glob(source_dir+'*.hdf5'):
 # this is done by computing the ratio between size and dnp
 # and taking the int floor value
     
-n_packets=4
-n_files =50
+n_packets=10
+n_files =20
 dnp = max_size/n_packets
 print("dnp",dnp)
 
@@ -115,7 +119,9 @@ for filename in glob(source_dir+'*.hdf5'):
     id, size, ndof = attributes_split(filename)
     print('in packet number size/dnp-1',int((size)/dnp)-1)
     list_filename[int((size)/dnp)-1].append((size,filename))
-    
+
+
+number_selected_files=0
 # select the files in each packets by keeping the largest one or randomly selected in packets
 for i in range(n_packets):
     # selection in packet
@@ -128,6 +134,10 @@ for i in range(n_packets):
         new_filename = f.split('/')[-1]
         print("copy", f, "in ", os.path.join(base, new_filename))
         shutil.copy(f, os.path.join(base, new_filename))
+        number_selected_files=number_selected_files + 1
+
+
+print('number of selected files', number_selected_files)
 
 
         
