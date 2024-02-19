@@ -75,7 +75,7 @@ run_options['T']=T
 run_options['h']=h
 run_options['theta']=theta
 
-run_options['Newton_max_iter'] =20
+run_options['Newton_max_iter'] =NewtonMaxIter
 run_options['Newton_tolerance'] =1e-10
 
 #run_options['bullet_options']=bullet_options
