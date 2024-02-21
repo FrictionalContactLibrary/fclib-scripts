@@ -7,19 +7,25 @@ base = './Capsules_selected'
 source_dir='./Capsules_0/'
 #base = './Chute_selected'
 #source_dir='./Chute_0/'
+base = './Spheres_selected'
+source_dir='./Spheres_0/'
+base = './KaplasTower_selected'
+source_dir='./KaplasTower_0/'
+base = './Spheres_1mm_selected'
+source_dir='./Spheres_0/'
 os.mkdir(base)
 counter =0
 max_size = 0
-
+min_size = 10000000000
 def attributes_split(filename):
     attributes=filename.split('-')
-    print('attributes:',attributes)
+    #print('attributes:',attributes)
     id = int(attributes[-1].split('.')[0])
-    print('id:',id)
+    #print('id:',id)
     size = int(attributes[-2])
-    print('size:',size)
+    #print('size:',size)
     ndof = int(attributes[-4])
-    print('ndof:', ndof)
+    #print('ndof:', ndof)
     return id, size, ndof
 
 
@@ -95,10 +101,13 @@ def select_randomly_in_packet(list_filename,  n):
 
 # compute max size (max number of contact)
 for filename in glob(source_dir+'*.hdf5'):
-    print( filename)
+    #print( filename)
     id, size, ndof = attributes_split(filename)
     max_size=max(size,max_size)
-    print("max_size:", max_size)
+    min_size=min(size,min_size)
+
+print("max_size:", max_size)
+print("min_size:", min_size)
 
 # compute packets of sizes
 # Classify files w.r.t to the size in packet
@@ -110,14 +119,32 @@ n_files =20
 dnp = max_size/n_packets
 print("dnp",dnp)
 
+import numpy as np
+
 list_filename= []
 for i in range(n_packets):
     list_filename.append([])
 
+# packets_sizes =[]
+# for i in range(n_packets):
+#     packets_sizes.append([])
+
+# for i in range(max_size):
+#     packets_sizes[int((i)/dnp)-1].append(i)
+
+# for p in packets_sizes:
+#     print('packets min max', np.min(np.array(p)), np.max(np.array(p)))
+
+    
+# #print('packets_sizes', packets_sizes)
+# input()
+
+
+## creation of packets by size
 for filename in glob(source_dir+'*.hdf5'):
     #print( filename)
     id, size, ndof = attributes_split(filename)
-    print('in packet number size/dnp-1',int((size)/dnp)-1)
+    print(filename, 'of size', size, 'in packet number size/dnp-1',int((size)/dnp)-1)
     list_filename[int((size)/dnp)-1].append((size,filename))
 
 
@@ -126,18 +153,16 @@ number_selected_files=0
 for i in range(n_packets):
     # selection in packet
     #list_filename[i] = select_the_largest_ones_in_packet(list_filename[i],  n_files)
-    list_filename[i] = select_randomly_in_packet(list_filename[i],  n_files)
-    #input()
-    # copy in destination dir
-    for size_f,f in  list_filename[i]:
-        print(size_f,f)
-        new_filename = f.split('/')[-1]
-        print("copy", f, "in ", os.path.join(base, new_filename))
-        shutil.copy(f, os.path.join(base, new_filename))
-        number_selected_files=number_selected_files + 1
-
+    if len(list_filename[i])>0: 
+        list_filename[i] = select_randomly_in_packet(list_filename[i],  n_files)
+        #input()
+        # copy in destination dir
+        for size_f,f in  list_filename[i]:
+            print(size_f,f)
+            new_filename = f.split('/')[-1]
+            print("copy", f, "in ", os.path.join(base, new_filename))
+            shutil.copy(f, os.path.join(base, new_filename))
+            number_selected_files=number_selected_files + 1
 
 print('number of selected files', number_selected_files)
-
-
         
