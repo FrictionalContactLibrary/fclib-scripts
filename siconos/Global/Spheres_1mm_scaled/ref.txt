@@ -1,0 +1,4 @@
+Sphere .0009
+../../shapes/ground.vtp
+Box 0.001 0.01 .04
+Box 0.001 .05 .05
