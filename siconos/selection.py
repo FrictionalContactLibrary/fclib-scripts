@@ -1,18 +1,30 @@
 import os
 import shutil as shutil
 from glob import glob 
+
+rename=False
 base = './PrimitiveSoup_selected'
 source_dir='./PrimitiveSoup_0/'
+
 base = './Capsules_selected'
 source_dir='./Capsules_0/'
+
 #base = './Chute_selected'
 #source_dir='./Chute_0/'
+
 base = './Spheres_selected'
 source_dir='./Spheres_0/'
+
 base = './KaplasTower_selected'
 source_dir='./KaplasTower_0/'
+
+rename=True
+new_name='Spheres1mmScaled'
 base = './Spheres_1mm_selected'
 source_dir='./Spheres_0/'
+
+
+
 os.mkdir(base)
 counter =0
 max_size = 0
@@ -115,7 +127,7 @@ print("min_size:", min_size)
 # and taking the int floor value
     
 n_packets=10
-n_files =20
+n_files =30
 dnp = max_size/n_packets
 print("dnp",dnp)
 
@@ -166,3 +178,16 @@ for i in range(n_packets):
 
 print('number of selected files', number_selected_files)
         
+
+if rename:
+    print(base+'/*.hdf5')
+    for filename in glob(base+'/*.hdf5'):
+        print(filename, os.path.basename(filename))
+        basename_l = os.path.basename(filename).split('-')
+        print(basename_l)
+        
+        basename_l[0]=new_name
+        new_filename='-'.join(basename_l)
+        print(new_filename)
+        print("mv", filename, "in ", os.path.join(base, new_filename))
+        shutil.move(filename, os.path.join(base, new_filename))
